@@ -1,0 +1,141 @@
+{
+  "version": "2.0",
+  "pipeline_stage": "validated",
+  "authors": {
+    "Flavius Ionut Bratu": {},
+    "Irina Oane": {},
+    "Andrei Barborica": {
+      "orcid": "0000-0001-6783-3769",
+      "affiliations": [
+        {
+          "name": "University of Bucharest",
+          "identifier": "https://ror.org/02x2v6p15",
+          "scheme": "ROR"
+        }
+      ]
+    },
+    "Cristian Donos": {
+      "orcid": "0000-0003-2181-062X"
+    },
+    "Constantin Pistol": {
+      "orcid": "0000-0002-5463-3650",
+      "affiliations": [
+        {
+          "name": "University of Bucharest",
+          "identifier": "https://ror.org/02x2v6p15",
+          "scheme": "ROR"
+        }
+      ]
+    },
+    "Andrei Daneasa": {},
+    "Camelia Lentoiu": {},
+    "Ioana Mindruta": {
+      "orcid": "0000-0001-9329-5132"
+    }
+  },
+  "related_identifiers": [
+    {
+      "identifier": "10.5061/dryad.7h44j0ztk",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "10.1016/j.cortex.2021.08.018",
+      "identifier_type": "DOI",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.5281/zenodo.5524902",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/nm000372",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/nm000372",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    }
+  ],
+  "funding_references": [
+    {
+      "funder_name": "EU COFUND FLAGERA II (SCALES; CAUSALTOMICS)"
+    },
+    {
+      "funder_name": "EU COFUND FLAGERA II",
+      "award_title": "SCALES; CAUSALTOMICS"
+    },
+    {
+      "funder_name": "UEFISCDI",
+      "award_number": "PN-III-P4-ID-PCE-2020-0935"
+    },
+    {
+      "funder_name": "UEFISCDI",
+      "award_number": "PN-III-P1-1.1-TE-2019-0502"
+    }
+  ],
+  "title": "Network of autoscopic hallucinations elicited by intracerebral stimulation of periventricular nodular heterotopia: SEEG during 43 Hz and single-pulse stimulation (1 patient)",
+  "license": "CC0-1.0",
+  "dataset_type": "raw",
+  "resource_type_general": "Dataset",
+  "modalities": [
+    "anat",
+    "ieeg"
+  ],
+  "resource_type_specific": "Structural MRI Dataset",
+  "sizes": [
+    "2.30 GB (23 files)"
+  ],
+  "formats": [
+    ".ades",
+    ".bad",
+    ".display",
+    ".eeg",
+    ".flt",
+    ".gz",
+    ".json",
+    ".levels",
+    ".mat",
+    ".mgz",
+    ".mrk",
+    ".mtg",
+    ".py",
+    ".sel",
+    ".tsv",
+    ".txt",
+    ".vhdr",
+    ".vmrk",
+    ".xlsx"
+  ],
+  "description": "Stereo-EEG recordings from one drug-resistant epilepsy patient with electrodes covering a right posterior temporal periventricular nodular heterotopia (PVNH) and adjacent cortex. 43 Hz electrical stimulation of the PVNH elicited autoscopic hallucinations, and single-pulse electrical stimulation was used to map effective connectivity of the underlying network. The dataset includes high-frequency stimulation and SPES recordings, event markers, contact coordinates and a defaced T1 image.",
+  "methods_description": "SEEG was recorded at 4096 Hz with 148 channels (131 SEEG contacts, DC inputs, trigger and monitor channels) during 43 Hz stimulation trains and single-pulse stimulation. Original AnyWave ADES float32 data were copied unchanged into BrainVision format, with markers, bad channels, contact coordinates in FreeSurfer surface RAS and a defaced T1 converted to BIDS.",
+  "keywords": [
+    {
+      "term": "stereo-EEG"
+    },
+    {
+      "term": "periventricular nodular heterotopia"
+    },
+    {
+      "term": "Electric Stimulation",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004558"
+    },
+    {
+      "term": "single-pulse electrical stimulation"
+    },
+    {
+      "term": "autoscopic hallucination"
+    },
+    {
+      "term": "drug-resistant epilepsy"
+    },
+    {
+      "term": "effective connectivity"
+    }
+  ],
+  "source_hash": "22545000b389f17103431560c375c3ca58a98d3d15b8e00181363607f745497a"
+}
