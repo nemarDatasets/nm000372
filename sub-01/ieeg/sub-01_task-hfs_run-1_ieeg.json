@@ -1,0 +1,25 @@
+{
+  "TaskName": "hfs",
+  "TaskDescription": "43 Hz high-frequency electrical stimulation (alternating polarity pulses) of contacts D08-D09 in the right posterior temporal periventricular nodular heterotopia, at 0.25-0.6 mA, with clinical testing; autoscopic hallucinations (body perception) were elicited at >=0.5 mA (marker labels).",
+  "SamplingFrequency": 4096.0,
+  "PowerLineFrequency": 50,
+  "SoftwareFilters": {
+    "AnyWave display filter file (.ades.flt, not applied to the stored samples)": {
+      "SEEG": [
+        0,
+        0,
+        50
+      ]
+    }
+  },
+  "HardwareFilters": "n/a",
+  "iEEGReference": "n/a (not stated in the release; signals as exported by the authors in AnyWave ADES format)",
+  "RecordingDuration": 660.000244140625,
+  "RecordingType": "continuous",
+  "SEEGChannelCount": 128,
+  "MiscChannelCount": 19,
+  "TriggerChannelCount": 1,
+  "ECOGChannelCount": 0,
+  "ElectricalStimulation": true,
+  "ElectricalStimulationParameters": "Stimulation events as labelled in the AnyWave markers: 43Hz D08-D09 0.25mA; NS; 43Hz D08-D09 0.5mA; body perception; 43Hz D08-D09 0.6mA; body perception"
+}

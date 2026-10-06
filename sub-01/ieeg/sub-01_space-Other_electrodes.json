@@ -1,0 +1,11 @@
+{
+  "hemisphere": {
+    "Description": "Hemisphere (column 'hemi' of Contact_coordinates.xlsx)"
+  },
+  "freesurfer_label": {
+    "Description": "Anatomical label at the contact (column 'exact' of Contact_coordinates.xlsx; FreeSurfer aseg/aparc naming)"
+  },
+  "type": {
+    "Description": "Electrode type; the release describes stereo-EEG depth electrodes"
+  }
+}

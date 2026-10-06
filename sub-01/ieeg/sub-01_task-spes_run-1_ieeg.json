@@ -1,0 +1,25 @@
+{
+  "TaskName": "spes",
+  "TaskDescription": "Single-pulse electrical stimulation (SPES) used to map stimulation-evoked potentials / effective connectivity; marker 'SPES D08 D09'.",
+  "SamplingFrequency": 4096.0,
+  "PowerLineFrequency": 50,
+  "SoftwareFilters": {
+    "AnyWave display filter file (.ades.flt, not applied to the stored samples)": {
+      "SEEG": [
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "HardwareFilters": "n/a",
+  "iEEGReference": "n/a (not stated in the release; signals as exported by the authors in AnyWave ADES format)",
+  "RecordingDuration": 320.000244140625,
+  "RecordingType": "continuous",
+  "SEEGChannelCount": 128,
+  "MiscChannelCount": 19,
+  "TriggerChannelCount": 1,
+  "ECOGChannelCount": 0,
+  "ElectricalStimulation": true,
+  "ElectricalStimulationParameters": "Stimulation events as labelled in the AnyWave markers: SPES D08 D09"
+}

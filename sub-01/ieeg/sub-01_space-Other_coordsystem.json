@@ -1,0 +1,7 @@
+{
+  "iEEGCoordinateSystem": "Other",
+  "iEEGCoordinateUnits": "mm",
+  "iEEGCoordinateSystemDescription": "FreeSurfer surface RAS (tkrRAS) of the patient's T1 image MRI_defaced.mgz: columns xmri/ymri/zmri of Data/Contact_coordinates.xlsx. Verified for every contact against the voxel columns: x = 128 - xmrivox, y = zmrivox - 128, z = 128 - ymrivox (the FreeSurfer conformed-space tkr transform).",
+  "iEEGCoordinateProcessingDescription": "Contact coordinates as provided by the authors (Contact_coordinates.xlsx).",
+  "IntendedFor": "bids::sub-01/anat/sub-01_T1w.nii.gz"
+}

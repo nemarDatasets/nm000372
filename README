@@ -1,0 +1,36 @@
+# Autoscopic hallucinations elicited by stimulation of periventricular nodular heterotopia (SEEG, 1 patient)
+
+Stereo-EEG from one drug-resistant epilepsy patient (release code SEEG84) with electrodes covering a right posterior
+temporal periventricular nodular heterotopia (PVNH) and adjacent cortex. 43 Hz electrical stimulation of the PVNH
+(contacts D08-D09) elicited autoscopic hallucinations; single-pulse electrical stimulation (SPES) was used to map
+effective connectivity.
+
+## Source
+- Dryad: Flavius Ionut Bratu, Irina Oane, Andrei Barborica, Cristian Donos, Constantin Pistol, Andrei Daneasa, Camelia Lentoiu, Ioana Mindruta. Data for: Network of autoscopic hallucinations elicited by intracerebral stimulations of
+  periventricular nodular heterotopia: an SEEG study. doi:10.5061/dryad.7h44j0ztk (version 7,
+  2021-09-23). License: CC0 1.0 (Dryad record `https://spdx.org/licenses/CC0-1.0.html`; Zenodo replica
+  5524947 also cc-zero). Article: Cortex (2021), doi:10.1016/j.cortex.2021.08.018. Analysis code: doi:10.5281/zenodo.5524902.
+- Acquired from the Zenodo replica of the Dryad record; Autoscopic.zip and ReadMe.txt matched the Dryad sha-256 digests.
+
+## Contents
+- `sub-01/ieeg/sub-01_task-hfs_run-1_ieeg.*`: recording with the 43 Hz stimulation trains (4096 Hz, 148 channels:
+  131 SEEG contacts typed SEEG in the source header, 16 DC inputs, TRIG, and OSAT/PR/Pleth monitor channels).
+- `sub-01/ieeg/sub-01_task-spes_run-1_ieeg.*`: recording with single-pulse stimulation (4096 Hz, 148 channels).
+- `*_events.tsv`: AnyWave markers (stimulation site, intensity and clinical response, analysis windows).
+- `*_channels.tsv`: status=bad for the channels in the authors' AnyWave `.ades.bad` list.
+- `sub-01_space-Other_electrodes.tsv`: contact coordinates (mm) in the FreeSurfer surface RAS of the T1 image, with
+  hemisphere and FreeSurfer label, from the authors' Contact_coordinates.xlsx.
+- `sub-01/anat/sub-01_T1w.nii.gz`: the authors' defaced T1 (MRI_defaced.mgz), voxel data and affine unchanged.
+  Deface check (surface renderings, six views): facial features are removed.
+- `sourcedata/dryad-7h44j0ztk-deidentified/`: the release folder (scripts, ROI/tract files, coordinate and SPES
+  spreadsheets, AnyWave sidecars, h2 connectivity results), without the `.dat` signal files (identical bytes are in the
+  BIDS `.eeg` files) and without the members whose file names or contents carry patient-identifying text (the
+  DSI Studio diffusion source/fib/mapping files, the stereotactic plan `.ppr`, and one statistics spreadsheet).
+
+## Conversion
+- AnyWave ADES stores little-endian float32 samples, channel-multiplexed (AnyWave keeps SEEG amplitudes in µV; the
+  magnitudes are consistent with µV, but the release does not state the unit); these bytes are copied unchanged as
+  BrainVision `.eeg` (IEEE_FLOAT_32, MULTIPLEXED, resolution 1, unit µV). No filtering, resampling, re-referencing or
+  channel removal. The `.ades.flt` display filter settings are reported in `SoftwareFilters`, not applied.
+- Age, sex and handedness are not given in the Dryad release (n/a). Diffusion MRI is not included (identifying file
+  names; only derived tractography inputs were released).

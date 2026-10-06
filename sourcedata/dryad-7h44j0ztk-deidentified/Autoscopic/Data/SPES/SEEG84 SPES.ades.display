@@ -1,0 +1,22 @@
+<!DOCTYPE AnyWaveSetup>
+<AnyWaveDisplaySetup2.0>
+   <Name>Default Setup</Name>
+   <SynchronizedViews>true</SynchronizedViews>
+   <View>
+      <SecondsPerCm>0.5</SecondsPerCm>
+      <ShowMarkerLabels>true</ShowMarkerLabels>
+      <ShowMarkerValues>true</ShowMarkerValues>
+      <BaseLineVisible>false</BaseLineVisible>
+      <GridVisible>true</GridVisible>
+      <DisplaySeconds>true</DisplaySeconds>
+      <OverlayChannels>false</OverlayChannels>
+      <ShowSensors>true</ShowSensors>
+      <LimitNumberOfChannels NumberOfChannels="100">true</LimitNumberOfChannels>
+      <MarkersBar>Show</MarkersBar>
+      <GridTimingRepresentation>ShowRelativeTime</GridTimingRepresentation>
+      <Filters>
+         <Filter>6</Filter>
+         <Filter>1</Filter>
+      </Filters>
+   </View>
+</AnyWaveDisplaySetup2.0>

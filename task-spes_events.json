@@ -1,0 +1,29 @@
+{
+  "onset": {
+    "Description": "Marker position (s) from the start of the recording, as stored in the AnyWave marker file",
+    "Units": "s"
+  },
+  "duration": {
+    "Description": "Marker duration (s) as stored in the AnyWave marker file (0 = instantaneous)",
+    "Units": "s"
+  },
+  "trial_type": {
+    "Description": "AnyWave marker label, verbatim (e.g. '43Hz D08-D09 0.6mA; body perception' = 43 Hz stimulation of bipolar contacts D08-D09 at 0.6 mA with the clinical response; 'SPES D08 D09'; prestim/stim/poststim = authors' analysis windows)"
+  },
+  "value": {
+    "Description": "AnyWave marker value field (n/a when the file stored -1)"
+  },
+  "sample": {
+    "Description": "onset x sampling frequency (0-based)"
+  },
+  "targets": {
+    "Description": "AnyWave marker target channels, if any"
+  },
+  "source": {
+    "Description": "Marker file of origin",
+    "Levels": {
+      "acquisition_mrk": "<recording>.mrk (markers exported with the recording)",
+      "analysis_ades_mrk": "<recording>.ades.mrk (markers added by the authors for analysis windows)"
+    }
+  }
+}

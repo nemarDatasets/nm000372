@@ -1,0 +1,15 @@
+{
+  "source_id": {
+    "Description": "Patient code used in the release (SEEG84)"
+  },
+  "age": {
+    "Description": "not given in the Dryad release",
+    "Units": "year"
+  },
+  "sex": {
+    "Description": "not given in the Dryad release"
+  },
+  "handedness": {
+    "Description": "not given in the Dryad release"
+  }
+}

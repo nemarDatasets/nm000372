@@ -1,0 +1,36 @@
+Brain Vision Data Exchange Marker File, Version 1.0
+
+[Common Infos]
+Codepage=UTF-8
+DataFile=sub-01_task-hfs_run-1_ieeg.eeg
+
+[Marker Infos]
+Mk1=New Segment,,1,1,0
+Mk2=Comment,prestim 0,172118,57344,0
+Mk3=Comment,stim D,245761,1,0
+Mk4=Comment,stim D,245761,1,0
+Mk5=Comment,43Hz D08-D09 0.25mA; NS,296335,1,0
+Mk6=Comment,43Hz D08-D09 0.25mA; NS,296335,1,0
+Mk7=Comment,prestim 1,327782,57344,0
+Mk8=Comment,poststim 0,331691,20480,0
+Mk9=Comment,43Hz D08-D09 0.5mA; body perception,388914,1,0
+Mk10=Comment,43Hz D08-D09 0.5mA; body perception,388914,1,0
+Mk11=Comment,stim 1,389054,40960,0
+Mk12=Comment,poststim 1,410539,20480,0
+Mk13=Comment,De-block start,1067668,1,0
+Mk14=Comment,De-block end,1071826,1,0
+Mk15=Comment,prestim 2,1148552,57344,0
+Mk16=Comment,stim 2,1213261,40960,0
+Mk17=Comment,43Hz D08-D09 0.6mA; body perception,1214293,1,0
+Mk18=Comment,43Hz D08-D09 0.6mA; body perception,1214293,1,0
+Mk19=Comment,poststim 2,1237419,20480,0
+Mk20=Comment,prestim 3,1863849,57344,0
+Mk21=Comment,43Hz D08-D09 0.6mA; body perception,1921992,1,0
+Mk22=Comment,43Hz D08-D09 0.6mA; body perception,1921992,1,0
+Mk23=Comment,stim 3,1922029,40960,0
+Mk24=Comment,poststim 3,1945314,20480,0
+Mk25=Comment,prestim 4,2539324,57344,0
+Mk26=Comment,stim 4,2598413,40960,0
+Mk27=Comment,43Hz D08-D09 0.6mA; body perception,2599273,1,0
+Mk28=Comment,43Hz D08-D09 0.6mA; body perception,2599273,1,0
+Mk29=Comment,poststim 4,2621683,20480,0

@@ -1,0 +1,52 @@
+{
+  "Name": "Network of autoscopic hallucinations elicited by intracerebral stimulation of periventricular nodular heterotopia: SEEG during 43 Hz and single-pulse stimulation (1 patient)",
+  "BIDSVersion": "1.10.0",
+  "DatasetType": "raw",
+  "License": "CC0-1.0",
+  "Authors": [
+    "Flavius Ionut Bratu",
+    "Irina Oane",
+    "Andrei Barborica",
+    "Cristian Donos",
+    "Constantin Pistol",
+    "Andrei Daneasa",
+    "Camelia Lentoiu",
+    "Ioana Mindruta"
+  ],
+  "Acknowledgements": "Data released by the authors on Dryad (doi:10.5061/dryad.7h44j0ztk). Converted to iEEG-BIDS for NEMAR without signal modification.",
+  "HowToAcknowledge": "Please cite Bratu FI, Oane I, et al. (2021) Cortex, doi:10.1016/j.cortex.2021.08.018, and the Dryad dataset doi:10.5061/dryad.7h44j0ztk.",
+  "Funding": [
+    "EU COFUND FLAGERA II (SCALES; CAUSALTOMICS)",
+    "UEFISCDI PN-III-P4-ID-PCE-2020-0935",
+    "UEFISCDI PN-III-P1-1.1-TE-2019-0502"
+  ],
+  "ReferencesAndLinks": [
+    "https://doi.org/10.1016/j.cortex.2021.08.018",
+    "https://doi.org/10.5061/dryad.7h44j0ztk",
+    "https://doi.org/10.5281/zenodo.5524902",
+    "https://zenodo.org/records/5524947"
+  ],
+  "Keywords": [
+    "periventricular nodular heterotopia",
+    "epilepsy surgery",
+    "SEEG",
+    "electrical stimulation",
+    "single-pulse electrical stimulation",
+    "autoscopic hallucination",
+    "bodily self-consciousness",
+    "effective connectivity"
+  ],
+  "SourceDatasets": [
+    {
+      "DOI": "doi:10.5061/dryad.7h44j0ztk",
+      "URL": "https://datadryad.org/dataset/doi:10.5061/dryad.7h44j0ztk",
+      "Version": "Dryad version 7 (published 2021-09-23)"
+    }
+  ],
+  "GeneratedBy": [
+    {
+      "Name": "b2dryad_convert057.py",
+      "Description": "AnyWave ADES float32 binary copied byte-for-byte as BrainVision; markers, bad channels, contact coordinates and defaced T1 converted. Code in code/."
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+onset	duration	trial_type	value	sample	targets	source
+42.020800	14.000000	prestim 0	n/a	172117	n/a	analysis_ades_mrk
+60.000000	0.000000	stim D	n/a	245760	n/a	acquisition_mrk
+60.000000	0.000000	stim D	n/a	245760	n/a	analysis_ades_mrk
+72.347200	0.000000	43Hz D08-D09 0.25mA; NS	n/a	296334	n/a	acquisition_mrk
+72.347200	0.000000	43Hz D08-D09 0.25mA; NS	n/a	296334	n/a	analysis_ades_mrk
+80.024600	14.000000	prestim 1	n/a	327781	n/a	analysis_ades_mrk
+80.979000	5.000000	poststim 0	n/a	331690	n/a	analysis_ades_mrk
+94.949500	0.000000	43Hz D08-D09 0.5mA; body perception	n/a	388913	n/a	acquisition_mrk
+94.949500	0.000000	43Hz D08-D09 0.5mA; body perception	n/a	388913	n/a	analysis_ades_mrk
+94.983700	10.000000	stim 1	n/a	389053	n/a	analysis_ades_mrk
+100.229000	5.000000	poststim 1	n/a	410538	n/a	analysis_ades_mrk
+260.661000	0.000000	De-block start	n/a	1067667	n/a	acquisition_mrk
+261.676000	0.000000	De-block end	n/a	1071825	n/a	acquisition_mrk
+280.408000	14.000000	prestim 2	n/a	1148551	n/a	analysis_ades_mrk
+296.206000	10.000000	stim 2	n/a	1213260	n/a	analysis_ades_mrk
+296.458000	0.000000	43Hz D08-D09 0.6mA; body perception	n/a	1214292	n/a	acquisition_mrk
+296.458000	0.000000	43Hz D08-D09 0.6mA; body perception	n/a	1214292	n/a	analysis_ades_mrk
+302.104000	5.000000	poststim 2	n/a	1237418	n/a	analysis_ades_mrk
+455.041000	14.000000	prestim 3	n/a	1863848	n/a	analysis_ades_mrk
+469.236000	0.000000	43Hz D08-D09 0.6mA; body perception	n/a	1921991	n/a	acquisition_mrk
+469.236000	0.000000	43Hz D08-D09 0.6mA; body perception	n/a	1921991	n/a	analysis_ades_mrk
+469.245000	10.000000	stim 3	n/a	1922028	n/a	analysis_ades_mrk
+474.930000	5.000000	poststim 3	n/a	1945313	n/a	analysis_ades_mrk
+619.952000	14.000000	prestim 4	n/a	2539323	n/a	analysis_ades_mrk
+634.378000	10.000000	stim 4	n/a	2598412	n/a	analysis_ades_mrk
+634.588000	0.000000	43Hz D08-D09 0.6mA; body perception	n/a	2599272	n/a	acquisition_mrk
+634.588000	0.000000	43Hz D08-D09 0.6mA; body perception	n/a	2599272	n/a	analysis_ades_mrk
+640.059000	5.000000	poststim 4	n/a	2621682	n/a	analysis_ades_mrk

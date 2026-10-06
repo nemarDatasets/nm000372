@@ -1,0 +1,201 @@
+<!DOCTYPE AnyWaveMontage>
+<Montage>
+   <Channel name="A02">
+      <type>SEEG</type>
+      <reference>A03</reference>
+      <color>black</color>
+      <filters highPass="-1" lowPass="-1" notch="50"/>
+   </Channel>
+   <Channel name="A07">
+      <type>SEEG</type>
+      <reference>A08</reference>
+      <color>black</color>
+      <filters highPass="-1" lowPass="-1" notch="50"/>
+   </Channel>
+   <Channel name="A12">
+      <type>SEEG</type>
+      <reference>A13</reference>
+      <color>black</color>
+      <filters highPass="-1" lowPass="-1" notch="50"/>
+   </Channel>
+   <Channel name="B01">
+      <type>SEEG</type>
+      <reference>B02</reference>
+      <color>black</color>
+      <filters highPass="-1" lowPass="-1" notch="50"/>
+   </Channel>
+   <Channel name="B10">
+      <type>SEEG</type>
+      <reference>B11</reference>
+      <color>black</color>
+      <filters highPass="-1" lowPass="-1" notch="50"/>
+   </Channel>
+   <Channel name="C04">
+      <type>SEEG</type>
+      <reference>C05</reference>
+      <color>black</color>
+      <filters highPass="-1" lowPass="-1" notch="50"/>
+   </Channel>
+   <Channel name="C11">
+      <type>SEEG</type>
+      <reference>C12</reference>
+      <color>black</color>
+      <filters highPass="-1" lowPass="-1" notch="50"/>
+   </Channel>
+   <Channel name="D03">
+      <type>SEEG</type>
+      <reference>D04</reference>
+      <color>black</color>
+      <filters highPass="-1" lowPass="-1" notch="50"/>
+   </Channel>
+   <Channel name="F'01">
+      <type>SEEG</type>
+      <reference>F'02</reference>
+      <color>black</color>
+      <filters highPass="-1" lowPass="-1" notch="50"/>
+   </Channel>
+   <Channel name="F'11">
+      <type>SEEG</type>
+      <reference>F'12</reference>
+      <color>black</color>
+      <filters highPass="-1" lowPass="-1" notch="50"/>
+   </Channel>
+   <Channel name="F01">
+      <type>SEEG</type>
+      <reference>F02</reference>
+      <color>black</color>
+      <filters highPass="-1" lowPass="-1" notch="50"/>
+   </Channel>
+   <Channel name="F04">
+      <type>SEEG</type>
+      <reference>F05</reference>
+      <color>black</color>
+      <filters highPass="-1" lowPass="-1" notch="50"/>
+   </Channel>
+   <Channel name="F09">
+      <type>SEEG</type>
+      <reference>F10</reference>
+      <color>black</color>
+      <filters highPass="-1" lowPass="-1" notch="50"/>
+   </Channel>
+   <Channel name="I01">
+      <type>SEEG</type>
+      <reference>I02</reference>
+      <color>black</color>
+      <filters highPass="-1" lowPass="-1" notch="50"/>
+   </Channel>
+   <Channel name="I09">
+      <type>SEEG</type>
+      <reference>I10</reference>
+      <color>black</color>
+      <filters highPass="-1" lowPass="-1" notch="50"/>
+   </Channel>
+   <Channel name="K01">
+      <type>SEEG</type>
+      <reference>K02</reference>
+      <color>black</color>
+      <filters highPass="-1" lowPass="-1" notch="50"/>
+   </Channel>
+   <Channel name="K05">
+      <type>SEEG</type>
+      <reference>K06</reference>
+      <color>black</color>
+      <filters highPass="-1" lowPass="-1" notch="50"/>
+   </Channel>
+   <Channel name="K12">
+      <type>SEEG</type>
+      <reference>K13</reference>
+      <color>black</color>
+      <filters highPass="-1" lowPass="-1" notch="50"/>
+   </Channel>
+   <Channel name="K15">
+      <type>SEEG</type>
+      <reference>K16</reference>
+      <color>black</color>
+      <filters highPass="-1" lowPass="-1" notch="50"/>
+   </Channel>
+   <Channel name="L01">
+      <type>SEEG</type>
+      <reference>L02</reference>
+      <color>black</color>
+      <filters highPass="-1" lowPass="-1" notch="50"/>
+   </Channel>
+   <Channel name="L04">
+      <type>SEEG</type>
+      <reference>L05</reference>
+      <color>black</color>
+      <filters highPass="-1" lowPass="-1" notch="50"/>
+   </Channel>
+   <Channel name="L13">
+      <type>SEEG</type>
+      <reference>L14</reference>
+      <color>black</color>
+      <filters highPass="-1" lowPass="-1" notch="50"/>
+   </Channel>
+   <Channel name="P01">
+      <type>SEEG</type>
+      <reference>P02</reference>
+      <color>black</color>
+      <filters highPass="-1" lowPass="-1" notch="50"/>
+   </Channel>
+   <Channel name="P12">
+      <type>SEEG</type>
+      <reference>P13</reference>
+      <color>black</color>
+      <filters highPass="-1" lowPass="-1" notch="50"/>
+   </Channel>
+   <Channel name="Q01">
+      <type>SEEG</type>
+      <reference>Q02</reference>
+      <color>black</color>
+      <filters highPass="-1" lowPass="-1" notch="50"/>
+   </Channel>
+   <Channel name="Q17">
+      <type>SEEG</type>
+      <reference>Q18</reference>
+      <color>black</color>
+      <filters highPass="-1" lowPass="-1" notch="50"/>
+   </Channel>
+   <Channel name="R01">
+      <type>SEEG</type>
+      <reference>R02</reference>
+      <color>black</color>
+      <filters highPass="-1" lowPass="-1" notch="50"/>
+   </Channel>
+   <Channel name="R09">
+      <type>SEEG</type>
+      <reference>R10</reference>
+      <color>black</color>
+      <filters highPass="-1" lowPass="-1" notch="50"/>
+   </Channel>
+   <Channel name="S01">
+      <type>SEEG</type>
+      <reference>S02</reference>
+      <color>black</color>
+      <filters highPass="-1" lowPass="-1" notch="50"/>
+   </Channel>
+   <Channel name="S13">
+      <type>SEEG</type>
+      <reference>S14</reference>
+      <color>black</color>
+      <filters highPass="-1" lowPass="-1" notch="50"/>
+   </Channel>
+   <Channel name="S14">
+      <type>SEEG</type>
+      <reference>S15</reference>
+      <color>black</color>
+      <filters highPass="-1" lowPass="-1" notch="50"/>
+   </Channel>
+   <Channel name="U09">
+      <type>SEEG</type>
+      <reference>U10</reference>
+      <color>black</color>
+      <filters highPass="-1" lowPass="-1" notch="50"/>
+   </Channel>
+   <Channel name="Y'01">
+      <type>SEEG</type>
+      <reference>Y'02</reference>
+      <color>black</color>
+      <filters highPass="-1" lowPass="-1" notch="50"/>
+   </Channel>
+</Montage>

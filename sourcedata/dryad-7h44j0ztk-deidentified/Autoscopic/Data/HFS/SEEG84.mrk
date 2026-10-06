@@ -1,0 +1,9 @@
+// AnyWave Marker File
+stim D 	-1	60	0	
+43Hz D08-D09 0.25mA; NS	-1	72.3472	0	
+43Hz D08-D09 0.5mA; body perception	-1	94.9495	0	
+De-block start	-1	260.661	0	
+De-block end	-1	261.676	0	
+43Hz D08-D09 0.6mA; body perception	-1	296.458	0	
+43Hz D08-D09 0.6mA; body perception	-1	469.236	0	
+43Hz D08-D09 0.6mA; body perception	-1	634.588	0	

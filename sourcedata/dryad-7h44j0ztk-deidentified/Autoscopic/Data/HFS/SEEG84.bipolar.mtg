@@ -1,0 +1,513 @@
+<!DOCTYPE AnyWaveMontage>
+<Montage>
+	<Channel name="I01">
+		<type>SEEG</type>
+		<reference>I02</reference>
+		<color>darkred</color>
+	</Channel>
+	<Channel name="I02">
+		<type>SEEG</type>
+		<reference>I03</reference>
+		<color>darkred</color>
+	</Channel>
+	<Channel name="I03">
+		<type>SEEG</type>
+		<reference>I04</reference>
+		<color>darkred</color>
+	</Channel>
+	<Channel name="I04">
+		<type>SEEG</type>
+		<reference>I05</reference>
+		<color>darkred</color>
+	</Channel>
+	<Channel name="I09">
+		<type>SEEG</type>
+		<reference>I10</reference>
+		<color>darkred</color>
+	</Channel>
+	<Channel name="I10">
+		<type>SEEG</type>
+		<reference>I11</reference>
+		<color>darkred</color>
+	</Channel>
+	<Channel name="A01">
+		<type>SEEG</type>
+		<reference>A02</reference>
+		<color>darkred</color>
+	</Channel>
+	<Channel name="A02">
+		<type>SEEG</type>
+		<reference>A03</reference>
+		<color>darkred</color>
+	</Channel>
+	<Channel name="A03">
+		<type>SEEG</type>
+		<reference>A04</reference>
+		<color>darkred</color>
+	</Channel>
+	<Channel name="A06">
+		<type>SEEG</type>
+		<reference>A07</reference>
+		<color>darkred</color>
+	</Channel>
+	<Channel name="A07">
+		<type>SEEG</type>
+		<reference>A08</reference>
+		<color>darkred</color>
+	</Channel>
+	<Channel name="A08">
+		<type>SEEG</type>
+		<reference>A09</reference>
+		<color>darkred</color>
+	</Channel>
+	<Channel name="A09">
+		<type>SEEG</type>
+		<reference>A10</reference>
+		<color>darkred</color>
+	</Channel>
+	<Channel name="A10">
+		<type>SEEG</type>
+		<reference>A11</reference>
+		<color>darkred</color>
+	</Channel>
+	<Channel name="A11">
+		<type>SEEG</type>
+		<reference>A12</reference>
+		<color>darkred</color>
+	</Channel>
+	<Channel name="A12">
+		<type>SEEG</type>
+		<reference>A13</reference>
+		<color>darkred</color>
+	</Channel>
+	<Channel name="A13">
+		<type>SEEG</type>
+		<reference>A14</reference>
+		<color>darkred</color>
+	</Channel>
+	<Channel name="B01">
+		<type>SEEG</type>
+		<reference>B02</reference>
+		<color>darkred</color>
+	</Channel>
+	<Channel name="B02">
+		<type>SEEG</type>
+		<reference>B03</reference>
+		<color>darkred</color>
+	</Channel>
+	<Channel name="B03">
+		<type>SEEG</type>
+		<reference>B04</reference>
+		<color>darkred</color>
+	</Channel>
+	<Channel name="B04">
+		<type>SEEG</type>
+		<reference>B05</reference>
+		<color>darkred</color>
+	</Channel>
+	<Channel name="B05">
+		<type>SEEG</type>
+		<reference>B06</reference>
+		<color>darkred</color>
+	</Channel>
+	<Channel name="B06">
+		<type>SEEG</type>
+		<reference>B07</reference>
+		<color>darkred</color>
+	</Channel>
+	<Channel name="B07">
+		<type>SEEG</type>
+		<reference>B08</reference>
+		<color>darkred</color>
+	</Channel>
+	<Channel name="B08">
+		<type>SEEG</type>
+		<reference>B09</reference>
+		<color>darkred</color>
+	</Channel>
+	<Channel name="B09">
+		<type>SEEG</type>
+		<reference>B10</reference>
+		<color>darkred</color>
+	</Channel>
+	<Channel name="B10">
+		<type>SEEG</type>
+		<reference>B11</reference>
+		<color>darkred</color>
+	</Channel>
+	<Channel name="B11">
+		<type>SEEG</type>
+		<reference>B12</reference>
+		<color>darkred</color>
+	</Channel>
+	<Channel name="C03">
+		<type>SEEG</type>
+		<reference>C04</reference>
+		<color>darkred</color>
+	</Channel>
+	<Channel name="C04">
+		<type>SEEG</type>
+		<reference>C05</reference>
+		<color>darkred</color>
+	</Channel>
+	<Channel name="C05">
+		<type>SEEG</type>
+		<reference>C06</reference>
+		<color>darkred</color>
+	</Channel>
+	<Channel name="C09">
+		<type>SEEG</type>
+		<reference>C10</reference>
+		<color>darkred</color>
+	</Channel>
+	<Channel name="C10">
+		<type>SEEG</type>
+		<reference>C11</reference>
+		<color>darkred</color>
+	</Channel>
+	<Channel name="C11">
+		<type>SEEG</type>
+		<reference>C12</reference>
+		<color>darkred</color>
+	</Channel>
+	<Channel name="F01">
+		<type>SEEG</type>
+		<reference>F02</reference>
+		<color>darkred</color>
+	</Channel>
+	<Channel name="F02">
+		<type>SEEG</type>
+		<reference>F03</reference>
+		<color>darkred</color>
+	</Channel>
+	<Channel name="F03">
+		<type>SEEG</type>
+		<reference>F04</reference>
+		<color>darkred</color>
+	</Channel>
+	<Channel name="F04">
+		<type>SEEG</type>
+		<reference>F05</reference>
+		<color>darkred</color>
+	</Channel>
+	<Channel name="F05">
+		<type>SEEG</type>
+		<reference>F06</reference>
+		<color>darkred</color>
+	</Channel>
+	<Channel name="F06">
+		<type>SEEG</type>
+		<reference>F07</reference>
+		<color>darkred</color>
+	</Channel>
+	<Channel name="F07">
+		<type>SEEG</type>
+		<reference>F08</reference>
+		<color>darkred</color>
+	</Channel>
+	<Channel name="F08">
+		<type>SEEG</type>
+		<reference>F09</reference>
+		<color>darkred</color>
+	</Channel>
+	<Channel name="F09">
+		<type>SEEG</type>
+		<reference>F10</reference>
+		<color>darkred</color>
+	</Channel>
+	<Channel name="F10">
+		<type>SEEG</type>
+		<reference>F11</reference>
+		<color>darkred</color>
+	</Channel>
+	<Channel name="F11">
+		<type>SEEG</type>
+		<reference>F12</reference>
+		<color>darkred</color>
+	</Channel>
+	<Channel name="L01">
+		<type>SEEG</type>
+		<reference>L02</reference>
+		<color>darkred</color>
+	</Channel>
+	<Channel name="L02">
+		<type>SEEG</type>
+		<reference>L03</reference>
+		<color>darkred</color>
+	</Channel>
+	<Channel name="L03">
+		<type>SEEG</type>
+		<reference>L04</reference>
+		<color>darkred</color>
+	</Channel>
+	<Channel name="L04">
+		<type>SEEG</type>
+		<reference>L05</reference>
+		<color>darkred</color>
+	</Channel>
+	<Channel name="L05">
+		<type>SEEG</type>
+		<reference>L06</reference>
+		<color>darkred</color>
+	</Channel>
+	<Channel name="L13">
+		<type>SEEG</type>
+		<reference>L14</reference>
+		<color>darkred</color>
+	</Channel>
+	<Channel name="L14">
+		<type>SEEG</type>
+		<reference>L15</reference>
+		<color>darkred</color>
+	</Channel>
+	<Channel name="D01">
+		<type>SEEG</type>
+		<reference>D02</reference>
+		<color>darkred</color>
+	</Channel>
+	<Channel name="D02">
+		<type>SEEG</type>
+		<reference>D03</reference>
+		<color>darkred</color>
+	</Channel>
+	<Channel name="D03">
+		<type>SEEG</type>
+		<reference>D04</reference>
+		<color>darkred</color>
+	</Channel>
+	<Channel name="D04">
+		<type>SEEG</type>
+		<reference>D05</reference>
+		<color>darkred</color>
+	</Channel>
+	<Channel name="D05">
+		<type>SEEG</type>
+		<reference>D06</reference>
+		<color>darkred</color>
+	</Channel>
+	<Channel name="D06">
+		<type>SEEG</type>
+		<reference>D07</reference>
+		<color>darkred</color>
+	</Channel>
+	<Channel name="D07">
+		<type>SEEG</type>
+		<reference>D08</reference>
+		<color>darkred</color>
+	</Channel>
+	<Channel name="D08">
+		<type>SEEG</type>
+		<reference>D09</reference>
+		<color>darkred</color>
+	</Channel>
+	<Channel name="D09">
+		<type>SEEG</type>
+		<reference>D10</reference>
+		<color>darkred</color>
+	</Channel>
+	<Channel name="D10">
+		<type>SEEG</type>
+		<reference>D11</reference>
+		<color>darkred</color>
+	</Channel>
+	<Channel name="D11">
+		<type>SEEG</type>
+		<reference>D12</reference>
+		<color>darkred</color>
+	</Channel>
+	<Channel name="D12">
+		<type>SEEG</type>
+		<reference>D13</reference>
+		<color>darkred</color>
+	</Channel>
+	<Channel name="U01">
+		<type>SEEG</type>
+		<reference>U02</reference>
+		<color>darkred</color>
+	</Channel>
+	<Channel name="U09">
+		<type>SEEG</type>
+		<reference>U10</reference>
+		<color>darkred</color>
+	</Channel>
+	<Channel name="S01">
+		<type>SEEG</type>
+		<reference>S02</reference>
+		<color>darkred</color>
+	</Channel>
+	<Channel name="S02">
+		<type>SEEG</type>
+		<reference>S03</reference>
+		<color>darkred</color>
+	</Channel>
+	<Channel name="S03">
+		<type>SEEG</type>
+		<reference>S04</reference>
+		<color>darkred</color>
+	</Channel>
+	<Channel name="S04">
+		<type>SEEG</type>
+		<reference>S05</reference>
+		<color>darkred</color>
+	</Channel>
+	<Channel name="S05">
+		<type>SEEG</type>
+		<reference>S06</reference>
+		<color>darkred</color>
+	</Channel>
+	<Channel name="S06">
+		<type>SEEG</type>
+		<reference>S07</reference>
+		<color>darkred</color>
+	</Channel>
+	<Channel name="S13">
+		<type>SEEG</type>
+		<reference>S14</reference>
+		<color>darkred</color>
+	</Channel>
+	<Channel name="S14">
+		<type>SEEG</type>
+		<reference>S15</reference>
+		<color>darkred</color>
+	</Channel>
+	<Channel name="Q01">
+		<type>SEEG</type>
+		<reference>Q02</reference>
+		<color>darkred</color>
+	</Channel>
+	<Channel name="Q02">
+		<type>SEEG</type>
+		<reference>Q03</reference>
+		<color>darkred</color>
+	</Channel>
+	<Channel name="Q05">
+		<type>SEEG</type>
+		<reference>Q06</reference>
+		<color>darkred</color>
+	</Channel>
+	<Channel name="Q06">
+		<type>SEEG</type>
+		<reference>Q07</reference>
+		<color>darkred</color>
+	</Channel>
+	<Channel name="Q17">
+		<type>SEEG</type>
+		<reference>Q18</reference>
+		<color>darkred</color>
+	</Channel>
+	<Channel name="K01">
+		<type>SEEG</type>
+		<reference>K02</reference>
+		<color>darkred</color>
+	</Channel>
+	<Channel name="K04">
+		<type>SEEG</type>
+		<reference>K05</reference>
+		<color>darkred</color>
+	</Channel>
+	<Channel name="K05">
+		<type>SEEG</type>
+		<reference>K06</reference>
+		<color>darkred</color>
+	</Channel>
+	<Channel name="K12">
+		<type>SEEG</type>
+		<reference>K13</reference>
+		<color>darkred</color>
+	</Channel>
+	<Channel name="K13">
+		<type>SEEG</type>
+		<reference>K14</reference>
+		<color>darkred</color>
+	</Channel>
+	<Channel name="K14">
+		<type>SEEG</type>
+		<reference>K15</reference>
+		<color>darkred</color>
+	</Channel>
+	<Channel name="K15">
+		<type>SEEG</type>
+		<reference>K16</reference>
+		<color>darkred</color>
+	</Channel>
+	<Channel name="R01">
+		<type>SEEG</type>
+		<reference>R02</reference>
+		<color>darkred</color>
+	</Channel>
+	<Channel name="R02">
+		<type>SEEG</type>
+		<reference>R03</reference>
+		<color>darkred</color>
+	</Channel>
+	<Channel name="R09">
+		<type>SEEG</type>
+		<reference>R10</reference>
+		<color>darkred</color>
+	</Channel>
+	<Channel name="R10">
+		<type>SEEG</type>
+		<reference>R11</reference>
+		<color>darkred</color>
+	</Channel>
+	<Channel name="P01">
+		<type>SEEG</type>
+		<reference>P02</reference>
+		<color>darkred</color>
+	</Channel>
+	<Channel name="P02">
+		<type>SEEG</type>
+		<reference>P03</reference>
+		<color>darkred</color>
+	</Channel>
+	<Channel name="P03">
+		<type>SEEG</type>
+		<reference>P04</reference>
+		<color>darkred</color>
+	</Channel>
+	<Channel name="P12">
+		<type>SEEG</type>
+		<reference>P13</reference>
+		<color>darkred</color>
+	</Channel>
+	<Channel name="Y'01">
+		<type>SEEG</type>
+		<reference>Y'02</reference>
+		<color>darkred</color>
+	</Channel>
+	<Channel name="Y'02">
+		<type>SEEG</type>
+		<reference>Y'03</reference>
+		<color>darkred</color>
+	</Channel>
+	<Channel name="Y'03">
+		<type>SEEG</type>
+		<reference>Y'04</reference>
+		<color>darkred</color>
+	</Channel>
+	<Channel name="F'01">
+		<type>SEEG</type>
+		<reference>F'02</reference>
+		<color>darkred</color>
+	</Channel>
+	<Channel name="F'11">
+		<type>SEEG</type>
+		<reference>F'12</reference>
+		<color>darkred</color>
+	</Channel>
+	<Channel name="DC01">
+		<type>OTHER</type>
+		<reference></reference>
+		<color>black</color>
+	</Channel>
+	<Channel name="DC06">
+		<type>OTHER</type>
+		<reference></reference>
+		<color>black</color>
+	</Channel>
+	<Channel name="TRIG">
+		<type>TRIGGER</type>
+		<reference></reference>
+		<color>black</color>
+	</Channel>
+</Montage>
