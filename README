@@ -1,9 +1,39 @@
 # Autoscopic hallucinations elicited by stimulation of periventricular nodular heterotopia (SEEG, 1 patient)
 
+## Overview
 Stereo-EEG from one drug-resistant epilepsy patient (release code SEEG84) with electrodes covering a right posterior
 temporal periventricular nodular heterotopia (PVNH) and adjacent cortex. 43 Hz electrical stimulation of the PVNH
 (contacts D08-D09) elicited autoscopic hallucinations; single-pulse electrical stimulation (SPES) was used to map
 effective connectivity.
+
+The study (Bratu et al. 2021, Cortex 145:285-294; published as a case report) combined four connectivity modalities around
+the PVNH: SPES-evoked potentials (resting-state effective connectivity), high-frequency stimulation with alternating polarity
+pulses time-locked to the clinical effect (symptom-related effective connectivity), non-linear regression (h2) functional
+connectivity after stimulation, and deterministic fiber tracking (structural connectivity). The multi-modal analysis
+identified a network involving the PVNH, occipital and temporal neocortex, fusiform gyrus and parietal cortex (article
+abstract).
+
+## Participant
+- One patient with drug-resistant epilepsy explored with SEEG (stereo-electroencephalography) because of a right
+  posterior temporal PVNH (article abstract).
+- Implantation in this release: 16 depth electrodes, 246 contacts with coordinates; 13 right-hemisphere electrodes
+  (198 contacts) and 3 left-hemisphere electrodes F', X', Y' (48 contacts), from the authors' Contact_coordinates.xlsx.
+- Clinical centre: the clinical authors are at the Epilepsy Monitoring Unit, Emergency University Hospital Bucharest,
+  Romania (author affiliations); the release does not state the recording site or the recording year.
+- Age, sex and handedness are not given in the Dryad release (n/a). The full article is closed access and could not be
+  read for this enrichment; the abstract does not report them.
+
+## Task / stimulation protocols
+- `task-hfs`: 43 Hz high-frequency electrical stimulation (alternating polarity pulses) of contacts D08-D09 in the PVNH at
+  0.25-0.6 mA with clinical testing; autoscopic hallucinations ("body perception", mainly involving the face and upper
+  trunk) were elicited at >= 0.5 mA (marker labels; abstract). The authors' analysis windows (prestim / stim / poststim)
+  are in the events.
+- `task-spes`: single-pulse electrical stimulation of D08-D09 (marker 'SPES D08 D09'); stimulation-evoked potentials.
+
+## Acquisition
+- 4096 Hz, 148 channels per recording (131 SEEG contacts typed SEEG in the source header, 16 DC inputs, TRIG, and
+  OSAT/PR/Pleth monitor channels). Amplifier/system, hardware filters, reference and ground are not stated in the release
+  (n/a in the sidecars). Power line 50 Hz.
 
 ## Source
 - Dryad: Flavius Ionut Bratu, Irina Oane, Andrei Barborica, Cristian Donos, Constantin Pistol, Andrei Daneasa, Camelia Lentoiu, Ioana Mindruta. Data for: Network of autoscopic hallucinations elicited by intracerebral stimulations of
@@ -27,10 +57,32 @@ effective connectivity.
   BIDS `.eeg` files) and without the members whose file names or contents carry patient-identifying text (the
   DSI Studio diffusion source/fib/mapping files, the stereotactic plan `.ppr`, and one statistics spreadsheet).
 
-## Conversion
+## Conversion / preprocessing
 - AnyWave ADES stores little-endian float32 samples, channel-multiplexed (AnyWave keeps SEEG amplitudes in µV; the
   magnitudes are consistent with µV, but the release does not state the unit); these bytes are copied unchanged as
   BrainVision `.eeg` (IEEE_FLOAT_32, MULTIPLEXED, resolution 1, unit µV). No filtering, resampling, re-referencing or
   channel removal. The `.ades.flt` display filter settings are reported in `SoftwareFilters`, not applied.
 - Age, sex and handedness are not given in the Dryad release (n/a). Diffusion MRI is not included (identifying file
   names; only derived tractography inputs were released).
+
+## Known caveats
+- Signal unit: µV by AnyWave convention; the release does not state the unit.
+- Age, sex, handedness, recording year, amplifier, reference and ground: not given in the release (n/a); the article is
+  closed access.
+- Diffusion MRI and five release members carrying patient-identifying text are not redistributed (see Contents).
+
+## How to load
+```python
+from mne_bids import BIDSPath, read_raw_bids
+bp = BIDSPath(root=".", subject="01", task="hfs", run="1", datatype="ieeg")  # or task="spes"
+raw = read_raw_bids(bp)
+```
+
+## Citation
+Bratu FI, Oane I, Barborica A, Donos C, Pistol C, Daneasa A, Lentoiu C, Mindruta I (2021). Network of autoscopic
+hallucinations elicited by intracerebral stimulations of periventricular nodular heterotopia: an SEEG study. Cortex
+145:285-294. doi:10.1016/j.cortex.2021.08.018. Data: doi:10.5061/dryad.7h44j0ztk.
+
+## Provenance of the metadata
+Dryad record (API v2, version 7) and ReadMe.txt; release files (ADES headers, AnyWave markers/bad lists,
+Contact_coordinates.xlsx); article abstract (PubMed 34775265). Enriched 2026-10-07.

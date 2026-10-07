@@ -1,6 +1,6 @@
 {
   "TaskName": "spes",
-  "TaskDescription": "Single-pulse electrical stimulation (SPES) used to map stimulation-evoked potentials / effective connectivity; marker 'SPES D08 D09'.",
+  "TaskDescription": "Single-pulse electrical stimulation (SPES) of the periventricular nodular heterotopia (contacts D08-D09; marker 'SPES D08 D09'); stimulation-evoked potentials were used to map resting-state effective connectivity (Bratu et al. 2021, Cortex 145:285-294, doi:10.1016/j.cortex.2021.08.018, abstract).",
   "SamplingFrequency": 4096.0,
   "PowerLineFrequency": 50,
   "SoftwareFilters": {
@@ -14,6 +14,8 @@
   },
   "HardwareFilters": "n/a",
   "iEEGReference": "n/a (not stated in the release; signals as exported by the authors in AnyWave ADES format)",
+  "iEEGPlacementScheme": "Clinical SEEG exploration of drug-resistant epilepsy: depth electrodes covering the right posterior temporal periventricular nodular heterotopia and the adjacent cortex (Bratu et al. 2021, Cortex 145:285-294, doi:10.1016/j.cortex.2021.08.018, abstract), plus left-hemisphere electrodes F', X', Y' (Contact_coordinates.xlsx).",
+  "iEEGElectrodeGroups": "16 depth electrodes, 246 contacts with coordinates: I: 12 contacts (R); A: 15 contacts (R); B: 15 contacts (R); F: 15 contacts (R); L: 15 contacts (R); D: 18 contacts (R); Q: 18 contacts (R); K: 18 contacts (R); U: 12 contacts (R); X': 18 contacts (L); Y': 18 contacts (L); F': 12 contacts (L); R: 12 contacts (R); P: 15 contacts (R); C: 15 contacts (R); S: 18 contacts (R)",
   "RecordingDuration": 320.000244140625,
   "RecordingType": "continuous",
   "SEEGChannelCount": 128,

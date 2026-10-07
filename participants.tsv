@@ -1,2 +1,2 @@
-participant_id	source_id	age	sex	handedness
-sub-01	SEEG84	n/a	n/a	n/a
+participant_id	source_id	age	sex	handedness	diagnosis	lesion	implant_type	implanted_hemispheres	n_electrodes	n_contacts	stimulated_contacts
+sub-01	SEEG84	n/a	n/a	n/a	drug-resistant epilepsy	periventricular nodular heterotopia (right posterior temporal)	SEEG	R;L	16	246	D08-D09

@@ -1,2 +1,8 @@
+1.0.1 2026-10-07
+  - 2026-10-07 metadata enrichment: participants (diagnosis, lesion, implant type, implanted hemispheres,
+    electrode/contact counts, stimulated contacts; age/sex/handedness remain n/a, source silent), participants.json
+    levels/descriptions, ieeg.json placement scheme/electrode groups/task descriptions, README restructured,
+    dataset_description references/keywords. Sources: article abstract (PubMed 34775265), Dryad record and release files.
+
 1.0.0 2026-10-06
   - Initial iEEG-BIDS conversion of Dryad doi:10.5061/dryad.7h44j0ztk for NEMAR.

@@ -1,15 +1,56 @@
 {
+  "participant_id": {
+    "Description": "BIDS participant label (single patient of the case study)"
+  },
   "source_id": {
     "Description": "Patient code used in the release (SEEG84)"
   },
   "age": {
-    "Description": "not given in the Dryad release",
+    "Description": "Age of the patient. Not given in the Dryad release (ReadMe.txt, file names and sidecars checked) nor in the article abstract (PubMed 34775265); the full article (Bratu et al. 2021, Cortex 145:285-294, doi:10.1016/j.cortex.2021.08.018) is closed access and could not be read: n/a.",
     "Units": "year"
   },
   "sex": {
-    "Description": "not given in the Dryad release"
+    "Description": "Sex of the patient. Not given in the Dryad release (ReadMe.txt, file names and sidecars checked) nor in the article abstract (PubMed 34775265); the full article (Bratu et al. 2021, Cortex 145:285-294, doi:10.1016/j.cortex.2021.08.018) is closed access and could not be read: n/a.",
+    "Levels": {
+      "M": "male",
+      "F": "female"
+    }
   },
   "handedness": {
-    "Description": "not given in the Dryad release"
+    "Description": "Handedness of the patient. Not given in the Dryad release (ReadMe.txt, file names and sidecars checked) nor in the article abstract (PubMed 34775265); the full article (Bratu et al. 2021, Cortex 145:285-294, doi:10.1016/j.cortex.2021.08.018) is closed access and could not be read: n/a.",
+    "Levels": {
+      "R": "right",
+      "L": "left",
+      "A": "ambidextrous"
+    }
+  },
+  "diagnosis": {
+    "Description": "Clinical diagnosis: 'a drug resistant epilepsy patient' explored with SEEG (Bratu et al. 2021, Cortex 145:285-294, doi:10.1016/j.cortex.2021.08.018, abstract; Dryad record abstract)"
+  },
+  "lesion": {
+    "Description": "Lesion covered by the implantation: 'electrodes covering the right posterior temporal PVNH and the adjacent cortex' (periventricular nodular heterotopia; Bratu et al. 2021, Cortex 145:285-294, doi:10.1016/j.cortex.2021.08.018, abstract)"
+  },
+  "implant_type": {
+    "Description": "Type of intracranial implantation (stereo-electroencephalography, depth electrodes; abstract; electrodes.tsv type=depth)",
+    "Levels": {
+      "SEEG": "stereo-EEG depth electrodes"
+    }
+  },
+  "implanted_hemispheres": {
+    "Description": "Hemispheres with implanted contacts, from the hemisphere column of the authors' Contact_coordinates.xlsx (sub-01_space-Other_electrodes.tsv): 198 contacts on 13 right-hemisphere electrodes (I, A, B, F, L, D, Q, K, U, R, P, C, S) and 48 contacts on 3 left-hemisphere electrodes (X', Y', F')",
+    "Levels": {
+      "R;L": "both hemispheres (right-predominant)"
+    }
+  },
+  "n_electrodes": {
+    "Description": "Number of SEEG electrodes (shafts) with contact coordinates in the release (electrodes.tsv column group)",
+    "Units": "count"
+  },
+  "n_contacts": {
+    "Description": "Number of SEEG contacts with coordinates in the release (Contact_coordinates.xlsx -> electrodes.tsv)",
+    "Units": "count"
+  },
+  "stimulated_contacts": {
+    "Description": "Bipolar contact pair in the PVNH used for the 43 Hz and single-pulse stimulations (AnyWave markers '43Hz D08-D09 ...' and 'SPES D08 D09'; Dryad ReadMe: PVNH stimulation)"
   }
 }

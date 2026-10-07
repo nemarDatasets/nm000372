@@ -24,7 +24,9 @@
     "https://doi.org/10.1016/j.cortex.2021.08.018",
     "https://doi.org/10.5061/dryad.7h44j0ztk",
     "https://doi.org/10.5281/zenodo.5524902",
-    "https://zenodo.org/records/5524947"
+    "https://zenodo.org/records/5524947",
+    "https://pubmed.ncbi.nlm.nih.gov/34775265/",
+    "https://meg.univ-amu.fr/wiki/AnyWave:ADES"
   ],
   "Keywords": [
     "periventricular nodular heterotopia",
@@ -34,7 +36,10 @@
     "single-pulse electrical stimulation",
     "autoscopic hallucination",
     "bodily self-consciousness",
-    "effective connectivity"
+    "effective connectivity",
+    "multi-modal connectivity",
+    "drug-resistant epilepsy",
+    "stereo-EEG"
   ],
   "SourceDatasets": [
     {
