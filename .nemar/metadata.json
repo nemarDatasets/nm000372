@@ -2,13 +2,20 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Network of autoscopic hallucinations elicited by intracerebral stimulation of periventricular nodular heterotopia: SEEG during 43 Hz and single-pulse stimulation (1 patient)",
-  "description": "Stereo-EEG recordings from a single drug-resistant epilepsy patient with a right posterior temporal periventricular nodular heterotopia (PVNH). 43 Hz electrical stimulation of the PVNH elicited autoscopic hallucinations, and single-pulse electrical stimulation was used to map effective connectivity. The dataset supports a multi-modal connectivity analysis of the network involving the PVNH, occipital and temporal neocortex, fusiform gyrus and parietal cortex. It is provided in iEEG-BIDS format with contact coordinates and a defaced T1 image.",
-  "methods_description": "SEEG was recorded at 4096 Hz with a 128-channel XLTek Quantum system from depth electrodes. Bipolar stimulation was delivered with a Guideline 4000LP+ stimulator. High-frequency stimulation used 43.3 Hz biphasic alternating-polarity 1 ms pulses for 5 s at 0.25-3 mA. Single-pulse stimulation used 20 pulses per trial, a 15 s inter-stimulus interval and 3 ms pulses at 0.25-5 mA.",
+  "description": "Stereo-EEG recordings from a single patient with drug-resistant epilepsy and a right posterior temporal periventricular nodular heterotopia (PVNH). 43 Hz high-frequency stimulation of the PVNH elicited autoscopic hallucinations, and single-pulse electrical stimulation was used to map effective connectivity. The dataset supports multi-modal connectivity analysis of the network underlying the hallucinations, which involves the PVNH, occipital and temporal neocortex, fusiform gyrus and parietal cortex.",
+  "methods_description": "SEEG was recorded at 4096 Hz with 148 channels (128 SEEG channels) on an XLTek Quantum system using Dixi depth electrodes. Bipolar stimulation of PVNH contacts D08-D09 used an FHC Guideline 4000LP+ stimulator. High-frequency stimulation was 43.3 Hz biphasic with alternating polarity, delivered for 5 s at 0.25-3 mA. Single-pulse stimulation used 20 pulses per trial with a 15 s inter-stimulus interval. A defaced T1 MRI and contact coordinates are included.",
   "license": "CC0-1.0",
   "dataset_type": "raw",
   "authors": {
     "Flavius Ionut Bratu": {},
-    "Irina Oane": {},
+    "Irina Oane": {
+      "orcid": "0000-0002-3796-0676",
+      "affiliations": [
+        {
+          "name": "Epilepsy Monitoring Unit, Neurology Department Emergency University Hospital Bucharest  Bucharest Romania"
+        }
+      ]
+    },
     "Andrei Barborica": {
       "orcid": "0000-0001-6783-3769",
       "affiliations": [
@@ -32,7 +39,14 @@
         }
       ]
     },
-    "Andrei Daneasa": {},
+    "Andrei Daneasa": {
+      "orcid": "0000-0001-5958-3931",
+      "affiliations": [
+        {
+          "name": "Epilepsy Monitoring Unit, Neurology Department Emergency University Hospital Bucharest  Bucharest Romania"
+        }
+      ]
+    },
     "Camelia Lentoiu": {},
     "Ioana Mindruta": {
       "orcid": "0000-0001-9329-5132"
@@ -40,25 +54,16 @@
   },
   "keywords": [
     {
-      "term": "Stereoelectroencephalography"
+      "term": "stereo-EEG"
     },
     {
       "term": "intracranial EEG"
     },
     {
-      "term": "Periventricular Nodular Heterotopia",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D054091"
+      "term": "periventricular nodular heterotopia"
     },
     {
-      "term": "Drug Resistant Epilepsy",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D000069279"
-    },
-    {
-      "term": "Electric Stimulation",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D004558"
+      "term": "electrical stimulation"
     },
     {
       "term": "single-pulse electrical stimulation"
@@ -68,6 +73,11 @@
     },
     {
       "term": "effective connectivity"
+    },
+    {
+      "term": "Drug Resistant Epilepsy",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D000069279"
     }
   ],
   "related_identifiers": [
@@ -95,6 +105,11 @@
       "identifier": "https://nemar.org/dataset/nm000372",
       "identifier_type": "URL",
       "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.1002/hbm.25749",
+      "identifier_type": "DOI",
+      "relation_type": "References"
     }
   ],
   "funding_references": [
@@ -103,10 +118,6 @@
     },
     {
       "funder_name": "COFUND-FLAGERA II-CAUSALTOMICS"
-    },
-    {
-      "funder_name": "EU COFUND-FLAGERA II",
-      "award_title": "SCALES"
     },
     {
       "funder_name": "UEFISCDI",
@@ -148,5 +159,5 @@
     ".xlsx",
     ".yml"
   ],
-  "source_hash": "f5d9cf0b81a2711abe529a0275c574b37846466b79eefb9aca9b538752f19a23"
+  "source_hash": "88da39b141cff6ae8259a37faf8ef1772d220dfbbc97c6ba3d8aea288ed930de"
 }
