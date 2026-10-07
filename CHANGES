@@ -1,3 +1,7 @@
+1.0.3 2026-10-07
+  - README: corrected the SEEG channel count (128, not 131) and documented the electrode/contact counts from the article,
+    its Supplementary Table 1, the released coordinate table and the released recordings.
+
 1.0.2 2026-10-07
   - Metadata from the article full text (Bratu et al. 2021 Cortex): age, sex, handedness, epilepsy onset age, seizure onset,
     SEEG epileptogenic zone, paper electrode/contact counts; recording system (XLTek Quantum, Natus), Dixi electrodes,
