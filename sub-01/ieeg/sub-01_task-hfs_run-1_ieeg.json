@@ -1,6 +1,6 @@
 {
   "TaskName": "hfs",
-  "TaskDescription": "43 Hz high-frequency electrical stimulation (alternating polarity pulses) of contacts D08-D09 in the right posterior temporal periventricular nodular heterotopia, at 0.25-0.6 mA, with clinical testing; autoscopic hallucinations (body perception) were elicited at >=0.5 mA (marker labels). High-frequency stimulation with alternating polarity pulses was used to identify the network time-locked to the clinical effect (symptom-related effective connectivity); autoscopic hallucinations mainly involved the face and upper trunk (Bratu et al. 2021, Cortex 145:285-294, doi:10.1016/j.cortex.2021.08.018, abstract).",
+  "TaskDescription": "43 Hz high-frequency electrical stimulation (alternating polarity pulses) of contacts D08-D09 in the right posterior temporal periventricular nodular heterotopia, at 0.25-0.6 mA, with clinical testing; autoscopic hallucinations (body perception) were elicited at >=0.5 mA (marker labels). High-frequency stimulation with alternating polarity pulses was used to identify the network time-locked to the clinical effect (symptom-related effective connectivity); autoscopic hallucinations mainly involved the face and upper trunk (Bratu et al. 2021, Cortex 145:285-294, doi:10.1016/j.cortex.2021.08.018, abstract). Full text: high-frequency stimulations (43.3 Hz) with square, biphasic, alternating polarity 1 msec pulses on adjacent contacts for 5 sec intervals; multiple trials with current from .25 mA to 3 mA in .25 or .1 mA steps 'while the patient was performing a specific task (reading a text aloud)' (Bratu et al. 2021, Cortex 145:285-294, doi:10.1016/j.cortex.2021.08.018, section 2 'Patient and methods').",
   "SamplingFrequency": 4096.0,
   "PowerLineFrequency": 50,
   "SoftwareFilters": {
@@ -13,8 +13,10 @@
     }
   },
   "HardwareFilters": "n/a",
+  "Manufacturer": "Natus",
+  "ManufacturersModelName": "XLTek Quantum, 128-channel ('Chronic SEEG recordings were performed using a 128-channel XLTek Quantum system (Natus, Middleton, WI)'; Bratu et al. 2021, Cortex 145:285-294, doi:10.1016/j.cortex.2021.08.018, section 2 'Patient and methods')",
   "iEEGReference": "n/a (not stated in the release; signals as exported by the authors in AnyWave ADES format)",
-  "iEEGPlacementScheme": "Clinical SEEG exploration of drug-resistant epilepsy: depth electrodes covering the right posterior temporal periventricular nodular heterotopia and the adjacent cortex (Bratu et al. 2021, Cortex 145:285-294, doi:10.1016/j.cortex.2021.08.018, abstract), plus left-hemisphere electrodes F', X', Y' (Contact_coordinates.xlsx).",
+  "iEEGPlacementScheme": "Clinical SEEG exploration of drug-resistant epilepsy: depth electrodes covering the right posterior temporal periventricular nodular heterotopia and the adjacent cortex (Bratu et al. 2021, Cortex 145:285-294, doi:10.1016/j.cortex.2021.08.018, abstract), plus left-hemisphere electrodes F', X', Y' (Contact_coordinates.xlsx). Article: 'The exploration hypothesis based on the electro-clinical correlations was focused on the PVNH, right temporo-parieto-occipital cortex with contralateral \"sentinel\" ... electrodes due to the independent interictal temporal epileptic activity'; 15 depth electrodes, 214 contacts, of which 126 cortical contacts were selected for continuous recording (Bratu et al. 2021, Cortex 145:285-294, doi:10.1016/j.cortex.2021.08.018, section 2 'Patient and methods'). The release has coordinates for 16 electrodes / 246 contacts.",
   "iEEGElectrodeGroups": "16 depth electrodes, 246 contacts with coordinates: I: 12 contacts (R); A: 15 contacts (R); B: 15 contacts (R); F: 15 contacts (R); L: 15 contacts (R); D: 18 contacts (R); Q: 18 contacts (R); K: 18 contacts (R); U: 12 contacts (R); X': 18 contacts (L); Y': 18 contacts (L); F': 12 contacts (L); R: 12 contacts (R); P: 15 contacts (R); C: 15 contacts (R); S: 18 contacts (R)",
   "RecordingDuration": 660.000244140625,
   "RecordingType": "continuous",
@@ -23,5 +25,8 @@
   "TriggerChannelCount": 1,
   "ECOGChannelCount": 0,
   "ElectricalStimulation": true,
-  "ElectricalStimulationParameters": "Stimulation events as labelled in the AnyWave markers: 43Hz D08-D09 0.25mA; NS; 43Hz D08-D09 0.5mA; body perception; 43Hz D08-D09 0.6mA; body perception"
+  "ElectricalStimulationParameters": "Stimulation events as labelled in the AnyWave markers: 43Hz D08-D09 0.25mA; NS; 43Hz D08-D09 0.5mA; body perception; 43Hz D08-D09 0.6mA; body perception. Protocol (article): bipolar stimulations with a programmable clinical stimulator (Guideline 4000LP+, FHC, Bowdoin, ME); 43.3 Hz square, biphasic, alternating polarity (cathode-leading, then anode-leading) pulses, 1 msec pulse width, adjacent contacts, 5 sec trains, .25-3 mA in .25 or .1 mA steps (Bratu et al. 2021, Cortex 145:285-294, doi:10.1016/j.cortex.2021.08.018, sections 2 and 2.1.3).",
+  "ElectrodeManufacturer": "Dixi Medical",
+  "ElectrodeManufacturersModelName": "Depth electrodes with 12-18 contacts, 2 mm contact length, 3.5 mm contact spacing, 0.8 mm diameter (Dixi Medical, Chaudefontaine, France; Bratu et al. 2021, Cortex 145:285-294, doi:10.1016/j.cortex.2021.08.018, section 2 'Patient and methods')",
+  "Instructions": "Read a text aloud during stimulation ('while the patient was performing a specific task (reading a text aloud)'; Bratu et al. 2021, Cortex 145:285-294, doi:10.1016/j.cortex.2021.08.018, section 2 'Patient and methods')."
 }

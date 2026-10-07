@@ -1,6 +1,6 @@
 {
   "TaskName": "spes",
-  "TaskDescription": "Single-pulse electrical stimulation (SPES) of the periventricular nodular heterotopia (contacts D08-D09; marker 'SPES D08 D09'); stimulation-evoked potentials were used to map resting-state effective connectivity (Bratu et al. 2021, Cortex 145:285-294, doi:10.1016/j.cortex.2021.08.018, abstract).",
+  "TaskDescription": "Single-pulse electrical stimulation (SPES) of the periventricular nodular heterotopia (contacts D08-D09; marker 'SPES D08 D09'); stimulation-evoked potentials were used to map resting-state effective connectivity (Bratu et al. 2021, Cortex 145:285-294, doi:10.1016/j.cortex.2021.08.018, abstract). Full text: variable multiple pulse amplitude trials on two adjacent contacts (20 pulses per trial, 15 sec inter-stimulus interval, 3 msec pulse duration, .25-5 mA, varied in .25 mA steps); SEPs recorded in the 122 other contacts (Bratu et al. 2021, Cortex 145:285-294, doi:10.1016/j.cortex.2021.08.018, section 2.1.2).",
   "SamplingFrequency": 4096.0,
   "PowerLineFrequency": 50,
   "SoftwareFilters": {
@@ -13,8 +13,10 @@
     }
   },
   "HardwareFilters": "n/a",
+  "Manufacturer": "Natus",
+  "ManufacturersModelName": "XLTek Quantum, 128-channel ('Chronic SEEG recordings were performed using a 128-channel XLTek Quantum system (Natus, Middleton, WI)'; Bratu et al. 2021, Cortex 145:285-294, doi:10.1016/j.cortex.2021.08.018, section 2 'Patient and methods')",
   "iEEGReference": "n/a (not stated in the release; signals as exported by the authors in AnyWave ADES format)",
-  "iEEGPlacementScheme": "Clinical SEEG exploration of drug-resistant epilepsy: depth electrodes covering the right posterior temporal periventricular nodular heterotopia and the adjacent cortex (Bratu et al. 2021, Cortex 145:285-294, doi:10.1016/j.cortex.2021.08.018, abstract), plus left-hemisphere electrodes F', X', Y' (Contact_coordinates.xlsx).",
+  "iEEGPlacementScheme": "Clinical SEEG exploration of drug-resistant epilepsy: depth electrodes covering the right posterior temporal periventricular nodular heterotopia and the adjacent cortex (Bratu et al. 2021, Cortex 145:285-294, doi:10.1016/j.cortex.2021.08.018, abstract), plus left-hemisphere electrodes F', X', Y' (Contact_coordinates.xlsx). Article: 'The exploration hypothesis based on the electro-clinical correlations was focused on the PVNH, right temporo-parieto-occipital cortex with contralateral \"sentinel\" ... electrodes due to the independent interictal temporal epileptic activity'; 15 depth electrodes, 214 contacts, of which 126 cortical contacts were selected for continuous recording (Bratu et al. 2021, Cortex 145:285-294, doi:10.1016/j.cortex.2021.08.018, section 2 'Patient and methods'). The release has coordinates for 16 electrodes / 246 contacts.",
   "iEEGElectrodeGroups": "16 depth electrodes, 246 contacts with coordinates: I: 12 contacts (R); A: 15 contacts (R); B: 15 contacts (R); F: 15 contacts (R); L: 15 contacts (R); D: 18 contacts (R); Q: 18 contacts (R); K: 18 contacts (R); U: 12 contacts (R); X': 18 contacts (L); Y': 18 contacts (L); F': 12 contacts (L); R: 12 contacts (R); P: 15 contacts (R); C: 15 contacts (R); S: 18 contacts (R)",
   "RecordingDuration": 320.000244140625,
   "RecordingType": "continuous",
@@ -23,5 +25,7 @@
   "TriggerChannelCount": 1,
   "ECOGChannelCount": 0,
   "ElectricalStimulation": true,
-  "ElectricalStimulationParameters": "Stimulation events as labelled in the AnyWave markers: SPES D08 D09"
+  "ElectricalStimulationParameters": "Stimulation events as labelled in the AnyWave markers: SPES D08 D09. Protocol (article): bipolar stimulation with a programmable clinical stimulator (Guideline 4000LP+, FHC, Bowdoin, ME); 20 pulses per trial, 15 sec inter-stimulus interval, 3 msec pulse duration, .25-5 mA in .25 mA steps (Bratu et al. 2021, Cortex 145:285-294, doi:10.1016/j.cortex.2021.08.018, sections 2 and 2.1.2).",
+  "ElectrodeManufacturer": "Dixi Medical",
+  "ElectrodeManufacturersModelName": "Depth electrodes with 12-18 contacts, 2 mm contact length, 3.5 mm contact spacing, 0.8 mm diameter (Dixi Medical, Chaudefontaine, France; Bratu et al. 2021, Cortex 145:285-294, doi:10.1016/j.cortex.2021.08.018, section 2 'Patient and methods')"
 }

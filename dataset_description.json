@@ -13,10 +13,11 @@
     "Camelia Lentoiu",
     "Ioana Mindruta"
   ],
-  "Acknowledgements": "Data released by the authors on Dryad (doi:10.5061/dryad.7h44j0ztk). Converted to iEEG-BIDS for NEMAR without signal modification.",
+  "Acknowledgements": "Data released by the authors on Dryad (doi:10.5061/dryad.7h44j0ztk). Converted to iEEG-BIDS for NEMAR without signal modification. Article acknowledgements and disclosures (Bratu et al. 2021): 'We would like to thank Ciurea Jean MD, PhD, Alin Rasina MD part of the functional Neurosurgical Team for helping with intracerebral electrode placement. Andrei Barborica PhD is also Vice-President and Chief Technological Officer of FHC Inc, the manufacturer of the electrical stimulator and stereotactic fixture used in Bucharest. The other authors have nothing to disclose concerning this work.'",
   "HowToAcknowledge": "Please cite Bratu FI, Oane I, et al. (2021) Cortex, doi:10.1016/j.cortex.2021.08.018, and the Dryad dataset doi:10.5061/dryad.7h44j0ztk.",
   "Funding": [
-    "EU COFUND FLAGERA II (SCALES; CAUSALTOMICS)",
+    "EU COFUND-FLAGERA II-SCALES",
+    "COFUND-FLAGERA II-CAUSALTOMICS",
     "UEFISCDI PN-III-P4-ID-PCE-2020-0935",
     "UEFISCDI PN-III-P1-1.1-TE-2019-0502"
   ],

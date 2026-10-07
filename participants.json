@@ -6,18 +6,18 @@
     "Description": "Patient code used in the release (SEEG84)"
   },
   "age": {
-    "Description": "Age of the patient. Not given in the Dryad release (ReadMe.txt, file names and sidecars checked) nor in the article abstract (PubMed 34775265); the full article (Bratu et al. 2021, Cortex 145:285-294, doi:10.1016/j.cortex.2021.08.018) is closed access and could not be read: n/a.",
+    "Description": "Age of the patient: 'a 32-year-old right-handed male' (Bratu et al. 2021, Cortex 145:285-294, doi:10.1016/j.cortex.2021.08.018, section 2 'Patient and methods'). The article does not state the recording year.",
     "Units": "year"
   },
   "sex": {
-    "Description": "Sex of the patient. Not given in the Dryad release (ReadMe.txt, file names and sidecars checked) nor in the article abstract (PubMed 34775265); the full article (Bratu et al. 2021, Cortex 145:285-294, doi:10.1016/j.cortex.2021.08.018) is closed access and could not be read: n/a.",
+    "Description": "Sex of the patient ('male'; Bratu et al. 2021, Cortex 145:285-294, doi:10.1016/j.cortex.2021.08.018, section 2 'Patient and methods')",
     "Levels": {
       "M": "male",
       "F": "female"
     }
   },
   "handedness": {
-    "Description": "Handedness of the patient. Not given in the Dryad release (ReadMe.txt, file names and sidecars checked) nor in the article abstract (PubMed 34775265); the full article (Bratu et al. 2021, Cortex 145:285-294, doi:10.1016/j.cortex.2021.08.018) is closed access and could not be read: n/a.",
+    "Description": "Handedness ('right-handed'; Bratu et al. 2021, Cortex 145:285-294, doi:10.1016/j.cortex.2021.08.018, section 2 'Patient and methods')",
     "Levels": {
       "R": "right",
       "L": "left",
@@ -25,7 +25,7 @@
     }
   },
   "diagnosis": {
-    "Description": "Clinical diagnosis: 'a drug resistant epilepsy patient' explored with SEEG (Bratu et al. 2021, Cortex 145:285-294, doi:10.1016/j.cortex.2021.08.018, abstract; Dryad record abstract)"
+    "Description": "Clinical diagnosis: 'a drug resistant epilepsy patient' explored with SEEG (Bratu et al. 2021, Cortex 145:285-294, doi:10.1016/j.cortex.2021.08.018, abstract; Dryad record abstract). Full text: drug-resistant epilepsy, considered a surgical candidate (Bratu et al. 2021, Cortex 145:285-294, doi:10.1016/j.cortex.2021.08.018, section 2 'Patient and methods')."
   },
   "lesion": {
     "Description": "Lesion covered by the implantation: 'electrodes covering the right posterior temporal PVNH and the adjacent cortex' (periventricular nodular heterotopia; Bratu et al. 2021, Cortex 145:285-294, doi:10.1016/j.cortex.2021.08.018, abstract)"
@@ -52,5 +52,27 @@
   },
   "stimulated_contacts": {
     "Description": "Bipolar contact pair in the PVNH used for the 43 Hz and single-pulse stimulations (AnyWave markers '43Hz D08-D09 ...' and 'SPES D08 D09'; Dryad ReadMe: PVNH stimulation)"
+  },
+  "epilepsy_onset_age": {
+    "Description": "Age at epilepsy onset: 'suffered from epilepsy since the age of 13' (Bratu et al. 2021, Cortex 145:285-294, doi:10.1016/j.cortex.2021.08.018, section 2 'Patient and methods')",
+    "Units": "year"
+  },
+  "seizure_onset": {
+    "Description": "Video-EEG: 'ictal electrical onset in the right posterior quadrant' (Bratu et al. 2021, Cortex 145:285-294, doi:10.1016/j.cortex.2021.08.018, section 2 'Patient and methods')"
+  },
+  "epileptogenic_zone_seeg": {
+    "Description": "SEEG: 'Ictal recordings showed an epileptogenic zone that involved the PVNH, the right posterior hippocampus and temporo-basal regions' (Bratu et al. 2021, Cortex 145:285-294, doi:10.1016/j.cortex.2021.08.018, section 2 'Patient and methods')"
+  },
+  "n_electrodes_paper": {
+    "Description": "Number of depth electrodes stated in the article: 'SEEG exploration was performed using 15 depth electrodes with 12-18 contacts' (Bratu et al. 2021, Cortex 145:285-294, doi:10.1016/j.cortex.2021.08.018, section 2 'Patient and methods'). Differs from n_electrodes (16, counted from the released Contact_coordinates.xlsx); both kept as stated.",
+    "Units": "count"
+  },
+  "n_contacts_paper": {
+    "Description": "Number of intracranial contacts stated in the article ('From 214 contacts placed intracranially'; Bratu et al. 2021, Cortex 145:285-294, doi:10.1016/j.cortex.2021.08.018, section 2 'Patient and methods'). Differs from n_contacts (246, counted from the released coordinates); both kept as stated.",
+    "Units": "count"
+  },
+  "n_contacts_recorded_paper": {
+    "Description": "Contacts selected for continuous recording: 'we selected 126 contacts placed in the cortex, to continuously record cortical activity' (Bratu et al. 2021, Cortex 145:285-294, doi:10.1016/j.cortex.2021.08.018, section 2 'Patient and methods')",
+    "Units": "count"
   }
 }

@@ -1,2 +1,2 @@
-participant_id	source_id	age	sex	handedness	diagnosis	lesion	implant_type	implanted_hemispheres	n_electrodes	n_contacts	stimulated_contacts
-sub-01	SEEG84	n/a	n/a	n/a	drug-resistant epilepsy	periventricular nodular heterotopia (right posterior temporal)	SEEG	R;L	16	246	D08-D09
+participant_id	source_id	age	sex	handedness	diagnosis	lesion	implant_type	implanted_hemispheres	n_electrodes	n_contacts	stimulated_contacts	epilepsy_onset_age	seizure_onset	epileptogenic_zone_seeg	n_electrodes_paper	n_contacts_paper	n_contacts_recorded_paper
+sub-01	SEEG84	32	M	R	drug-resistant epilepsy	periventricular nodular heterotopia (right posterior temporal)	SEEG	R;L	16	246	D08-D09	13	right posterior quadrant (ictal electrical onset on video-EEG)	PVNH, right posterior hippocampus and temporo-basal regions	15	214	126

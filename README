@@ -20,8 +20,16 @@ abstract).
   (198 contacts) and 3 left-hemisphere electrodes F', X', Y' (48 contacts), from the authors' Contact_coordinates.xlsx.
 - Clinical centre: the clinical authors are at the Epilepsy Monitoring Unit, Emergency University Hospital Bucharest,
   Romania (author affiliations); the release does not state the recording site or the recording year.
-- Age, sex and handedness are not given in the Dryad release (n/a). The full article is closed access and could not be
-  read for this enrichment; the abstract does not report them.
+- From the article full text (section 2, Patient and methods): a 32-year-old right-handed male with no relevant medical
+  history and epilepsy since the age of 13; drug-resistant, considered a surgical candidate. Video-EEG: asynchronous
+  interictal discharges in both temporal posterior regions, ictal electrical onset in the right posterior quadrant. MRI:
+  right temporal posterior PVNH; FDG-PET: right temporal hypometabolism. SEEG epileptogenic zone: the PVNH, the right
+  posterior hippocampus and temporo-basal regions.
+- Implantation per the article: 15 Dixi Medical depth electrodes (12-18 contacts, 2 mm contact length, 3.5 mm spacing,
+  0.8 mm diameter), 214 intracranial contacts, of which 126 cortical contacts were selected for continuous recording;
+  right temporo-parieto-occipital coverage with contralateral "sentinel" electrodes. The release coordinates list
+  16 electrodes / 246 contacts (see Known caveats).
+- The article does not state the recording year.
 
 ## Task / stimulation protocols
 - `task-hfs`: 43 Hz high-frequency electrical stimulation (alternating polarity pulses) of contacts D08-D09 in the PVNH at
@@ -29,11 +37,16 @@ abstract).
   trunk) were elicited at >= 0.5 mA (marker labels; abstract). The authors' analysis windows (prestim / stim / poststim)
   are in the events.
 - `task-spes`: single-pulse electrical stimulation of D08-D09 (marker 'SPES D08 D09'); stimulation-evoked potentials.
+- Stimulation protocol (article, sections 2, 2.1.2, 2.1.3): bipolar stimulation with a programmable clinical stimulator
+  (Guideline 4000LP+, FHC, Bowdoin, ME). HFS: 43.3 Hz square, biphasic, alternating polarity 1 msec pulses on adjacent
+  contacts for 5 sec, .25-3 mA in .25 or .1 mA steps, while the patient was reading a text aloud; 8 stimulation trials
+  were performed in D08-09 (section 3.1). SPES: 20 pulses per trial, 15 sec inter-stimulus interval, 3 msec pulse
+  duration, .25-5 mA in .25 mA steps.
 
 ## Acquisition
 - 4096 Hz, 148 channels per recording (131 SEEG contacts typed SEEG in the source header, 16 DC inputs, TRIG, and
-  OSAT/PR/Pleth monitor channels). Amplifier/system, hardware filters, reference and ground are not stated in the release
-  (n/a in the sidecars). Power line 50 Hz.
+  OSAT/PR/Pleth monitor channels). Recording system per the article: 128-channel XLTek Quantum (Natus, Middleton, WI).
+  Hardware filters, reference and ground are not stated in the release or the article (n/a). Power line 50 Hz.
 
 ## Source
 - Dryad: Flavius Ionut Bratu, Irina Oane, Andrei Barborica, Cristian Donos, Constantin Pistol, Andrei Daneasa, Camelia Lentoiu, Ioana Mindruta. Data for: Network of autoscopic hallucinations elicited by intracerebral stimulations of
@@ -62,13 +75,16 @@ abstract).
   magnitudes are consistent with µV, but the release does not state the unit); these bytes are copied unchanged as
   BrainVision `.eeg` (IEEE_FLOAT_32, MULTIPLEXED, resolution 1, unit µV). No filtering, resampling, re-referencing or
   channel removal. The `.ades.flt` display filter settings are reported in `SoftwareFilters`, not applied.
-- Age, sex and handedness are not given in the Dryad release (n/a). Diffusion MRI is not included (identifying file
+- Age, sex and handedness are not in the Dryad release; they come from the article full text. Diffusion MRI is not included (identifying file
   names; only derived tractography inputs were released).
 
 ## Known caveats
 - Signal unit: µV by AnyWave convention; the release does not state the unit.
-- Age, sex, handedness, recording year, amplifier, reference and ground: not given in the release (n/a); the article is
-  closed access.
+- Recording year, reference and ground: not given in the release or the article (n/a).
+- Electrode counts: the article states 15 depth electrodes / 214 contacts; the released coordinate table has 16 electrodes /
+  246 contacts. Both are kept (participants.tsv n_electrodes/n_contacts vs n_electrodes_paper/n_contacts_paper).
+- Competing interest stated in the article: Andrei Barborica is Vice-President and CTO of FHC Inc, the manufacturer of the
+  electrical stimulator and stereotactic fixture used.
 - Diffusion MRI and five release members carrying patient-identifying text are not redistributed (see Contents).
 
 ## How to load
@@ -85,4 +101,5 @@ hallucinations elicited by intracerebral stimulations of periventricular nodular
 
 ## Provenance of the metadata
 Dryad record (API v2, version 7) and ReadMe.txt; release files (ADES headers, AnyWave markers/bad lists,
-Contact_coordinates.xlsx); article abstract (PubMed 34775265). Enriched 2026-10-07.
+Contact_coordinates.xlsx); article abstract (PubMed 34775265). Enriched 2026-10-07; second pass 2026-10-07 from the article full text
+(Bratu et al. 2021 Cortex, sections 2, 2.1.2, 2.1.3, 3.1, Funding, Acknowledgements and disclosures).

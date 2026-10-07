@@ -1,3 +1,8 @@
+1.0.2 2026-10-07
+  - Metadata from the article full text (Bratu et al. 2021 Cortex): age, sex, handedness, epilepsy onset age, seizure onset,
+    SEEG epileptogenic zone, paper electrode/contact counts; recording system (XLTek Quantum, Natus), Dixi electrodes,
+    stimulator and stimulation protocol in ieeg.json; Funding verbatim; acknowledgements/disclosure; README.
+
 1.0.1 2026-10-07
   - 2026-10-07 metadata enrichment: participants (diagnosis, lesion, implant type, implanted hemispheres,
     electrode/contact counts, stimulated contacts; age/sex/handedness remain n/a, source silent), participants.json
