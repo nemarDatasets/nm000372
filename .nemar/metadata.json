@@ -1,6 +1,11 @@
 {
   "version": "2.0",
   "pipeline_stage": "validated",
+  "title": "Network of autoscopic hallucinations elicited by intracerebral stimulation of periventricular nodular heterotopia: SEEG during 43 Hz and single-pulse stimulation (1 patient)",
+  "description": "Stereo-EEG recordings from one patient with drug-resistant epilepsy and a right posterior temporal periventricular nodular heterotopia (PVNH). The dataset includes 43 Hz high-frequency stimulation of the PVNH, which elicited autoscopic hallucinations, and single-pulse electrical stimulation recordings used to map effective connectivity. It is accompanied by contact coordinates, a defaced T1 image, and event markers describing stimulation parameters and clinical responses.",
+  "methods_description": "SEEG was recorded at 4096 Hz from 148 channels (131 SEEG contacts, DC inputs, trigger and monitor channels) with 16 depth electrodes. Stimulation of PVNH contacts D08-D09 was delivered at 43 Hz with alternating polarity pulses at 0.25-0.6 mA, plus single-pulse stimulation. AnyWave ADES float32 data were converted to BrainVision without signal modification.",
+  "license": "CC0-1.0",
+  "dataset_type": "raw",
   "authors": {
     "Flavius Ionut Bratu": {},
     "Irina Oane": {},
@@ -33,6 +38,33 @@
       "orcid": "0000-0001-9329-5132"
     }
   },
+  "keywords": [
+    {
+      "term": "stereo-EEG"
+    },
+    {
+      "term": "periventricular nodular heterotopia"
+    },
+    {
+      "term": "Electric Stimulation",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004558"
+    },
+    {
+      "term": "single-pulse electrical stimulation"
+    },
+    {
+      "term": "autoscopic hallucination"
+    },
+    {
+      "term": "Drug Resistant Epilepsy",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D000069279"
+    },
+    {
+      "term": "effective connectivity"
+    }
+  ],
   "related_identifiers": [
     {
       "identifier": "10.5061/dryad.7h44j0ztk",
@@ -77,15 +109,12 @@
       "award_number": "PN-III-P1-1.1-TE-2019-0502"
     }
   ],
-  "title": "Network of autoscopic hallucinations elicited by intracerebral stimulation of periventricular nodular heterotopia: SEEG during 43 Hz and single-pulse stimulation (1 patient)",
-  "license": "CC0-1.0",
-  "dataset_type": "raw",
   "resource_type_general": "Dataset",
+  "resource_type_specific": "Structural MRI Dataset",
   "modalities": [
     "anat",
     "ieeg"
   ],
-  "resource_type_specific": "Structural MRI Dataset",
   "sizes": [
     "2.30 GB (23 files)"
   ],
@@ -108,34 +137,8 @@
     ".txt",
     ".vhdr",
     ".vmrk",
-    ".xlsx"
+    ".xlsx",
+    ".yml"
   ],
-  "description": "Stereo-EEG recordings from one drug-resistant epilepsy patient with electrodes covering a right posterior temporal periventricular nodular heterotopia (PVNH) and adjacent cortex. 43 Hz electrical stimulation of the PVNH elicited autoscopic hallucinations, and single-pulse electrical stimulation was used to map effective connectivity of the underlying network. The dataset includes high-frequency stimulation and SPES recordings, event markers, contact coordinates and a defaced T1 image.",
-  "methods_description": "SEEG was recorded at 4096 Hz with 148 channels (131 SEEG contacts, DC inputs, trigger and monitor channels) during 43 Hz stimulation trains and single-pulse stimulation. Original AnyWave ADES float32 data were copied unchanged into BrainVision format, with markers, bad channels, contact coordinates in FreeSurfer surface RAS and a defaced T1 converted to BIDS.",
-  "keywords": [
-    {
-      "term": "stereo-EEG"
-    },
-    {
-      "term": "periventricular nodular heterotopia"
-    },
-    {
-      "term": "Electric Stimulation",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D004558"
-    },
-    {
-      "term": "single-pulse electrical stimulation"
-    },
-    {
-      "term": "autoscopic hallucination"
-    },
-    {
-      "term": "drug-resistant epilepsy"
-    },
-    {
-      "term": "effective connectivity"
-    }
-  ],
-  "source_hash": "22545000b389f17103431560c375c3ca58a98d3d15b8e00181363607f745497a"
+  "source_hash": "4d6a5473e6a4410e7a63b4aafc77aff1294d7de884af989a043ff5dbcb224b6e"
 }
