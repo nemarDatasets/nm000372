@@ -116,3 +116,9 @@ hallucinations elicited by intracerebral stimulations of periventricular nodular
 Dryad record (API v2, version 7) and ReadMe.txt; release files (ADES headers, AnyWave markers/bad lists,
 Contact_coordinates.xlsx); article abstract (PubMed 34775265). Enriched 2026-10-07; second pass 2026-10-07 from the article full text
 (Bratu et al. 2021 Cortex, sections 2, 2.1.2, 2.1.3, 3.1, Funding, Acknowledgements and disclosures).
+
+## Ethics approval
+
+Verbatim from Barborica A, Oane I, Donos C, Daneasa A, Mihai F, Pistol C, Dabu A, Roceanu A, Mindruta I (2022). Imaging the effective networks associated with cortical function through intracranial high-frequency stimulation. Human Brain Mapping 43(5):1657-1675. https://doi.org/10.1002/hbm.25749 (PMC8886668), "Ethics statement" and "Patient consent" sections. Note: the source article of this dataset (Bratu et al. 2021, Cortex 145:285-294) contains no ethics statement; this statement is from the companion study by the same Bucharest SEEG group (Emergency University Hospital Bucharest), same SEEG/high-frequency stimulation protocol, patients explored 2017-2021, and was designated as the applicable approval by the dataset curator (B. Aristimunha, 2026-10-07):
+
+> The study has been performed under Emergency University Hospital Bucharest ethical committee approval 32483/27.06.2018 and Bucharest University ethical committee approval CEC 45/11.06.2020. All patients signed a written informed consent, in accordance with the Declaration of Helsinki, for the recordings, stimulations and data sharing procedures.

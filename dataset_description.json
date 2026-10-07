@@ -21,6 +21,9 @@
     "UEFISCDI PN-III-P4-ID-PCE-2020-0935",
     "UEFISCDI PN-III-P1-1.1-TE-2019-0502"
   ],
+  "EthicsApprovals": [
+    "The study has been performed under Emergency University Hospital Bucharest ethical committee approval 32483/27.06.2018 and Bucharest University ethical committee approval CEC 45/11.06.2020. All patients signed a written informed consent, in accordance with the Declaration of Helsinki, for the recordings, stimulations and data sharing procedures."
+  ],
   "ReferencesAndLinks": [
     "https://doi.org/10.1016/j.cortex.2021.08.018",
     "https://doi.org/10.5061/dryad.7h44j0ztk",
