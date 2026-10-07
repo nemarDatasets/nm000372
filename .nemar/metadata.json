@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Network of autoscopic hallucinations elicited by intracerebral stimulation of periventricular nodular heterotopia: SEEG during 43 Hz and single-pulse stimulation (1 patient)",
-  "description": "Stereo-EEG recordings from one patient with drug-resistant epilepsy and a right posterior temporal periventricular nodular heterotopia (PVNH). The dataset includes 43 Hz high-frequency stimulation of the PVNH, which elicited autoscopic hallucinations, and single-pulse electrical stimulation recordings used to map effective connectivity. It is accompanied by contact coordinates, a defaced T1 image, and event markers describing stimulation parameters and clinical responses.",
-  "methods_description": "SEEG was recorded at 4096 Hz from 148 channels (131 SEEG contacts, DC inputs, trigger and monitor channels) with 16 depth electrodes. Stimulation of PVNH contacts D08-D09 was delivered at 43 Hz with alternating polarity pulses at 0.25-0.6 mA, plus single-pulse stimulation. AnyWave ADES float32 data were converted to BrainVision without signal modification.",
+  "description": "Stereo-EEG recordings from a single drug-resistant epilepsy patient with a right posterior temporal periventricular nodular heterotopia (PVNH). 43 Hz electrical stimulation of the PVNH elicited autoscopic hallucinations, and single-pulse electrical stimulation was used to map effective connectivity. The dataset supports a multi-modal connectivity analysis of the network involving the PVNH, occipital and temporal neocortex, fusiform gyrus and parietal cortex. It is provided in iEEG-BIDS format with contact coordinates and a defaced T1 image.",
+  "methods_description": "SEEG was recorded at 4096 Hz with a 128-channel XLTek Quantum system from depth electrodes. Bipolar stimulation was delivered with a Guideline 4000LP+ stimulator. High-frequency stimulation used 43.3 Hz biphasic alternating-polarity 1 ms pulses for 5 s at 0.25-3 mA. Single-pulse stimulation used 20 pulses per trial, a 15 s inter-stimulus interval and 3 ms pulses at 0.25-5 mA.",
   "license": "CC0-1.0",
   "dataset_type": "raw",
   "authors": {
@@ -40,10 +40,20 @@
   },
   "keywords": [
     {
-      "term": "stereo-EEG"
+      "term": "Stereoelectroencephalography"
     },
     {
-      "term": "periventricular nodular heterotopia"
+      "term": "intracranial EEG"
+    },
+    {
+      "term": "Periventricular Nodular Heterotopia",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D054091"
+    },
+    {
+      "term": "Drug Resistant Epilepsy",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D000069279"
     },
     {
       "term": "Electric Stimulation",
@@ -55,11 +65,6 @@
     },
     {
       "term": "autoscopic hallucination"
-    },
-    {
-      "term": "Drug Resistant Epilepsy",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D000069279"
     },
     {
       "term": "effective connectivity"
@@ -94,11 +99,14 @@
   ],
   "funding_references": [
     {
-      "funder_name": "EU COFUND FLAGERA II (SCALES; CAUSALTOMICS)"
+      "funder_name": "EU COFUND-FLAGERA II-SCALES"
     },
     {
-      "funder_name": "EU COFUND FLAGERA II",
-      "award_title": "SCALES; CAUSALTOMICS"
+      "funder_name": "COFUND-FLAGERA II-CAUSALTOMICS"
+    },
+    {
+      "funder_name": "EU COFUND-FLAGERA II",
+      "award_title": "SCALES"
     },
     {
       "funder_name": "UEFISCDI",
@@ -140,5 +148,5 @@
     ".xlsx",
     ".yml"
   ],
-  "source_hash": "4d6a5473e6a4410e7a63b4aafc77aff1294d7de884af989a043ff5dbcb224b6e"
+  "source_hash": "f5d9cf0b81a2711abe529a0275c574b37846466b79eefb9aca9b538752f19a23"
 }
