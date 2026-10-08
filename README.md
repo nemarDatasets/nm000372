@@ -1,0 +1,126 @@
+[![DOI](https://img.shields.io/badge/DOI-10.82901%2Fnemar.nm000372-blue)](https://doi.org/10.82901/nemar.nm000372)
+
+# Autoscopic hallucinations elicited by stimulation of periventricular nodular heterotopia (SEEG, 1 patient)
+
+## Overview
+Stereo-EEG from one drug-resistant epilepsy patient (release code SEEG84) with electrodes covering a right posterior
+temporal periventricular nodular heterotopia (PVNH) and adjacent cortex. 43 Hz electrical stimulation of the PVNH
+(contacts D08-D09) elicited autoscopic hallucinations; single-pulse electrical stimulation (SPES) was used to map
+effective connectivity.
+
+The study (Bratu et al. 2021, Cortex 145:285-294; published as a case report) combined four connectivity modalities around
+the PVNH: SPES-evoked potentials (resting-state effective connectivity), high-frequency stimulation with alternating polarity
+pulses time-locked to the clinical effect (symptom-related effective connectivity), non-linear regression (h2) functional
+connectivity after stimulation, and deterministic fiber tracking (structural connectivity). The multi-modal analysis
+identified a network involving the PVNH, occipital and temporal neocortex, fusiform gyrus and parietal cortex (article
+abstract).
+
+## Participant
+- One patient with drug-resistant epilepsy explored with SEEG (stereo-electroencephalography) because of a right
+  posterior temporal PVNH (article abstract).
+- Implantation in this release: 16 depth electrodes, 246 contacts with coordinates; 13 right-hemisphere electrodes
+  (198 contacts) and 3 left-hemisphere electrodes F', X', Y' (48 contacts), from the authors' Contact_coordinates.xlsx.
+- Clinical centre: the clinical authors are at the Epilepsy Monitoring Unit, Emergency University Hospital Bucharest,
+  Romania (author affiliations); the release does not state the recording site or the recording year.
+- From the article full text (section 2, Patient and methods): a 32-year-old right-handed male with no relevant medical
+  history and epilepsy since the age of 13; drug-resistant, considered a surgical candidate. Video-EEG: asynchronous
+  interictal discharges in both temporal posterior regions, ictal electrical onset in the right posterior quadrant. MRI:
+  right temporal posterior PVNH; FDG-PET: right temporal hypometabolism. SEEG epileptogenic zone: the PVNH, the right
+  posterior hippocampus and temporo-basal regions.
+- Implantation per the article: 15 Dixi Medical depth electrodes (12-18 contacts, 2 mm contact length, 3.5 mm spacing,
+  0.8 mm diameter), 214 intracranial contacts, of which 126 cortical contacts were selected for continuous recording;
+  right temporo-parieto-occipital coverage with contralateral "sentinel" electrodes. The release coordinates list
+  16 electrodes / 246 contacts (see Known caveats).
+- The article does not state the recording year.
+
+## Task / stimulation protocols
+- `task-hfs`: 43 Hz high-frequency electrical stimulation (alternating polarity pulses) of contacts D08-D09 in the PVNH at
+  0.25-0.6 mA with clinical testing; autoscopic hallucinations ("body perception", mainly involving the face and upper
+  trunk) were elicited at >= 0.5 mA (marker labels; abstract). The authors' analysis windows (prestim / stim / poststim)
+  are in the events.
+- `task-spes`: single-pulse electrical stimulation of D08-D09 (marker 'SPES D08 D09'); stimulation-evoked potentials.
+- Stimulation protocol (article, sections 2, 2.1.2, 2.1.3): bipolar stimulation with a programmable clinical stimulator
+  (Guideline 4000LP+, FHC, Bowdoin, ME). HFS: 43.3 Hz square, biphasic, alternating polarity 1 msec pulses on adjacent
+  contacts for 5 sec, .25-3 mA in .25 or .1 mA steps, while the patient was reading a text aloud; 8 stimulation trials
+  were performed in D08-09 (section 3.1). SPES: 20 pulses per trial, 15 sec inter-stimulus interval, 3 msec pulse
+  duration, .25-5 mA in .25 mA steps.
+
+## Acquisition
+- 4096 Hz, 148 channels per recording: 128 SEEG channels (127 contacts listed in the coordinate table plus one channel
+  labelled C90 that has no coordinates), 16 DC inputs, TRIG, and the OSAT/PR/Pleth monitor channels (typed SEEG in the
+  source header, MISC here). Recording system per the article: 128-channel XLTek Quantum (Natus, Middleton, WI).
+  Hardware filters, reference and ground are not stated in the release or the article (n/a). Power line 50 Hz.
+
+## Source
+- Dryad: Flavius Ionut Bratu, Irina Oane, Andrei Barborica, Cristian Donos, Constantin Pistol, Andrei Daneasa, Camelia Lentoiu, Ioana Mindruta. Data for: Network of autoscopic hallucinations elicited by intracerebral stimulations of
+  periventricular nodular heterotopia: an SEEG study. doi:10.5061/dryad.7h44j0ztk (version 7,
+  2021-09-23). License: CC0 1.0 (Dryad record `https://spdx.org/licenses/CC0-1.0.html`; Zenodo replica
+  5524947 also cc-zero). Article: Cortex (2021), doi:10.1016/j.cortex.2021.08.018. Analysis code: doi:10.5281/zenodo.5524902.
+- Acquired from the Zenodo replica of the Dryad record; Autoscopic.zip and ReadMe.txt matched the Dryad sha-256 digests.
+
+## Contents
+- `sub-01/ieeg/sub-01_task-hfs_run-1_ieeg.*`: recording with the 43 Hz stimulation trains (4096 Hz, 148 channels:
+  128 SEEG channels, 16 DC inputs, TRIG, and OSAT/PR/Pleth monitor channels).
+- `sub-01/ieeg/sub-01_task-spes_run-1_ieeg.*`: recording with single-pulse stimulation (4096 Hz, 148 channels).
+- `*_events.tsv`: AnyWave markers (stimulation site, intensity and clinical response, analysis windows).
+- `*_channels.tsv`: status=bad for the channels in the authors' AnyWave `.ades.bad` list.
+- `sub-01_space-Other_electrodes.tsv`: contact coordinates (mm) in the FreeSurfer surface RAS of the T1 image, with
+  hemisphere and FreeSurfer label, from the authors' Contact_coordinates.xlsx.
+- `sub-01/anat/sub-01_T1w.nii.gz`: the authors' defaced T1 (MRI_defaced.mgz), voxel data and affine unchanged.
+  Deface check (surface renderings, six views): facial features are removed.
+- `sourcedata/dryad-7h44j0ztk-deidentified/`: the release folder (scripts, ROI/tract files, coordinate and SPES
+  spreadsheets, AnyWave sidecars, h2 connectivity results), without the `.dat` signal files (identical bytes are in the
+  BIDS `.eeg` files) and without the members whose file names or contents carry patient-identifying text (the
+  DSI Studio diffusion source/fib/mapping files, the stereotactic plan `.ppr`, and one statistics spreadsheet).
+
+## Conversion / preprocessing
+- AnyWave ADES stores little-endian float32 samples, channel-multiplexed (AnyWave keeps SEEG amplitudes in µV; the
+  magnitudes are consistent with µV, but the release does not state the unit); these bytes are copied unchanged as
+  BrainVision `.eeg` (IEEE_FLOAT_32, MULTIPLEXED, resolution 1, unit µV). No filtering, resampling, re-referencing or
+  channel removal. The `.ades.flt` display filter settings are reported in `SoftwareFilters`, not applied.
+- Age, sex and handedness are not in the Dryad release; they come from the article full text. Diffusion MRI is not included (identifying file
+  names; only derived tractography inputs were released).
+
+## Known caveats
+- Signal unit: µV by AnyWave convention; the release does not state the unit.
+- Recording year, reference and ground: not given in the release or the article (n/a).
+- Electrode counts differ between sources. All values are kept, with their sources:
+  - Article (Bratu et al. 2021, section 2 "Patient and methods"): "15 depth electrodes with 12-18 contacts"; "From 214
+    contacts placed intracranially we selected 126 contacts placed in the cortex, to continuously record cortical
+    activity". Section 2.1.2: SEPs "were recorded in the 122 other contacts".
+  - Article Supplementary Material 1, Supplementary Table 1 ("Recording contact coordinates"): 126 contacts on 15
+    electrodes (A, B, C, D, F, I, K, L, P, Q, R, S, U, F', Y'; none on X').
+  - Released coordinate table (Contact_coordinates.xlsx -> `sub-01_space-Other_electrodes.tsv`): 246 contacts on 16
+    electrodes (the 15 above plus X', 18 contacts). participants.tsv n_electrodes/n_contacts (16/246) count this table;
+    n_electrodes_paper/n_contacts_paper/n_contacts_recorded_paper (15/214/126) are the article values.
+  - Released recordings (`*_channels.tsv`, both runs): 128 SEEG channels = the 126 contacts of Supplementary Table 1
+    plus R11 (in the coordinate table, not in Supplementary Table 1) and C90 (no coordinates; label kept as in the
+    source). No X' contact was recorded.
+  - So the recordings support the article's 15 electrodes and its recording montage (126 + 2 channels). The release
+    does not reproduce the article's 214 intracranial contacts; the coordinate table lists 246 contacts.
+- Competing interest stated in the article: Andrei Barborica is Vice-President and CTO of FHC Inc, the manufacturer of the
+  electrical stimulator and stereotactic fixture used.
+- Diffusion MRI and five release members carrying patient-identifying text are not redistributed (see Contents).
+
+## How to load
+```python
+from mne_bids import BIDSPath, read_raw_bids
+bp = BIDSPath(root=".", subject="01", task="hfs", run="1", datatype="ieeg")  # or task="spes"
+raw = read_raw_bids(bp)
+```
+
+## Citation
+Bratu FI, Oane I, Barborica A, Donos C, Pistol C, Daneasa A, Lentoiu C, Mindruta I (2021). Network of autoscopic
+hallucinations elicited by intracerebral stimulations of periventricular nodular heterotopia: an SEEG study. Cortex
+145:285-294. doi:10.1016/j.cortex.2021.08.018. Data: doi:10.5061/dryad.7h44j0ztk.
+
+## Provenance of the metadata
+Dryad record (API v2, version 7) and ReadMe.txt; release files (ADES headers, AnyWave markers/bad lists,
+Contact_coordinates.xlsx); article abstract (PubMed 34775265). Enriched 2026-10-07; second pass 2026-10-07 from the article full text
+(Bratu et al. 2021 Cortex, sections 2, 2.1.2, 2.1.3, 3.1, Funding, Acknowledgements and disclosures).
+
+## Ethics approval
+
+Verbatim from Barborica A, Oane I, Donos C, Daneasa A, Mihai F, Pistol C, Dabu A, Roceanu A, Mindruta I (2022). Imaging the effective networks associated with cortical function through intracranial high-frequency stimulation. Human Brain Mapping 43(5):1657-1675. https://doi.org/10.1002/hbm.25749 (PMC8886668), "Ethics statement" and "Patient consent" sections. Note: the source article of this dataset (Bratu et al. 2021, Cortex 145:285-294) contains no ethics statement; this statement is from the companion study by the same Bucharest SEEG group (Emergency University Hospital Bucharest), same SEEG/high-frequency stimulation protocol, patients explored 2017-2021, and was designated as the applicable approval by the dataset curator (B. Aristimunha, 2026-10-07):
+
+> The study has been performed under Emergency University Hospital Bucharest ethical committee approval 32483/27.06.2018 and Bucharest University ethical committee approval CEC 45/11.06.2020. All patients signed a written informed consent, in accordance with the Declaration of Helsinki, for the recordings, stimulations and data sharing procedures.
