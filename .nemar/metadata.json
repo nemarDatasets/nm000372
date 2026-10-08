@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Network of autoscopic hallucinations elicited by intracerebral stimulation of periventricular nodular heterotopia: SEEG during 43 Hz and single-pulse stimulation (1 patient)",
-  "description": "Stereo-EEG recordings from a single patient with drug-resistant epilepsy and a right posterior temporal periventricular nodular heterotopia (PVNH). 43 Hz high-frequency stimulation of the PVNH elicited autoscopic hallucinations, and single-pulse electrical stimulation was used to map effective connectivity. The dataset supports multi-modal connectivity analysis of the network underlying the hallucinations, which involves the PVNH, occipital and temporal neocortex, fusiform gyrus and parietal cortex.",
-  "methods_description": "SEEG was recorded at 4096 Hz with 148 channels (128 SEEG channels) on an XLTek Quantum system using Dixi depth electrodes. Bipolar stimulation of PVNH contacts D08-D09 used an FHC Guideline 4000LP+ stimulator. High-frequency stimulation was 43.3 Hz biphasic with alternating polarity, delivered for 5 s at 0.25-3 mA. Single-pulse stimulation used 20 pulses per trial with a 15 s inter-stimulus interval. A defaced T1 MRI and contact coordinates are included.",
+  "description": "Stereo-EEG recordings from a single drug-resistant epilepsy patient with a right posterior temporal periventricular nodular heterotopia (PVNH). High-frequency (43 Hz) stimulation of the PVNH elicited autoscopic hallucinations, and single-pulse electrical stimulation was used to map effective connectivity. The dataset supports multi-modal connectivity analysis of the network involving the PVNH, occipital and temporal neocortex, fusiform gyrus and parietal cortex.",
+  "methods_description": "Recordings were acquired at 4096 Hz with a 128-channel XLTek Quantum system from 16 depth electrodes (per the released coordinate table). Bipolar stimulation of contacts D08-D09 used a Guideline 4000LP+ stimulator. High-frequency stimulation was 43.3 Hz biphasic alternating-polarity 1 ms pulses for 5 s, at 0.25-3 mA per the article (the README task section lists 0.25-0.6 mA). Single-pulse stimulation used 20 pulses per trial with a 15 s inter-stimulus interval. A defaced T1 MRI and contact coordinates are included.",
   "license": "CC0-1.0",
   "dataset_type": "raw",
   "authors": {
@@ -147,6 +147,7 @@
     ".json",
     ".levels",
     ".mat",
+    ".md",
     ".mgz",
     ".mrk",
     ".mtg",
@@ -159,5 +160,5 @@
     ".xlsx",
     ".yml"
   ],
-  "source_hash": "88da39b141cff6ae8259a37faf8ef1772d220dfbbc97c6ba3d8aea288ed930de"
+  "source_hash": "263f079ea0950ab3dd8836ff348756604001560f0a85d4924e70330761ebe07a"
 }
