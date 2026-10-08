@@ -57,5 +57,7 @@
       "Name": "b2dryad_convert057.py",
       "Description": "AnyWave ADES float32 binary copied byte-for-byte as BrainVision; markers, bad channels, contact coordinates and defaced T1 converted. Code in code/."
     }
-  ]
+  ],
+  "DatasetDOI": "10.82901/nemar.nm000372",
+  "Version": "1.0.0"
 }
