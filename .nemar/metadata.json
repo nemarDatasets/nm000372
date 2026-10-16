@@ -1,9 +1,9 @@
 {
   "version": "2.0",
   "pipeline_stage": "validated",
-  "title": "Bratu-2021-network-10.1016/j.cortex.2021.08.018",
-  "description": "Stereo-EEG recordings from a single patient with drug-resistant epilepsy and a right posterior temporal periventricular nodular heterotopia (PVNH). High-frequency (43 Hz) stimulation of the PVNH elicited autoscopic hallucinations, and single-pulse electrical stimulation was used to map effective connectivity. The dataset supports multi-modal connectivity analysis (stimulation-evoked potentials, functional and structural connectivity) of the network underlying bodily self-consciousness disturbances. It includes iEEG recordings, contact coordinates and a defaced T1 image.",
-  "methods_description": "SEEG was recorded at 4096 Hz from 128 channels (XLTek Quantum) with depth electrodes. Bipolar stimulation with a clinical stimulator used 43.3 Hz biphasic high-frequency trains (0.25-3 mA, 5 s) and single-pulse stimulation (20 pulses per trial, 15 s interval, 3 ms pulse duration). Original AnyWave ADES data were converted byte-for-byte to BrainVision format in iEEG-BIDS.",
+  "title": "Autoscopic hallucinations elicited by stimulation of periventricular nodular heterotopia (SEEG, 1 patient)",
+  "description": "Stereo-EEG recordings from a single patient with drug-resistant epilepsy and a right posterior temporal periventricular nodular heterotopia (PVNH). High-frequency (43 Hz) electrical stimulation of the PVNH elicited autoscopic hallucinations, and single-pulse electrical stimulation was used to map effective connectivity. The dataset supports multi-modal connectivity analysis (effective, functional and structural) of the network underlying bodily self-consciousness disturbances, and includes a defaced T1 MRI and contact coordinates.",
+  "methods_description": "SEEG was recorded at 4096 Hz with a 128-channel XLTek Quantum system using Dixi Medical depth electrodes. Bipolar stimulation was delivered with a clinical stimulator (Guideline 4000LP+, FHC). High-frequency stimulation used 43.3 Hz biphasic alternating-polarity 1 ms pulses for 5 s at 0.25-3 mA. Single-pulse stimulation used 20 pulses per trial with a 15 s inter-stimulus interval and 3 ms pulses. Data were converted from AnyWave ADES to BrainVision format without signal modification.",
   "license": "CC0-1.0",
   "dataset_type": "raw",
   "authors": {
@@ -54,16 +54,16 @@
   },
   "keywords": [
     {
-      "term": "stereo-EEG"
+      "term": "SEEG"
     },
     {
       "term": "intracranial EEG"
     },
     {
-      "term": "electrical stimulation"
+      "term": "periventricular nodular heterotopia"
     },
     {
-      "term": "periventricular nodular heterotopia"
+      "term": "electrical stimulation"
     },
     {
       "term": "autoscopic hallucination"
@@ -157,5 +157,5 @@
     ".xlsx",
     ".yml"
   ],
-  "source_hash": "f62e736120c11156d2b9e9f99deb4b734ba856f6ef0ef1218e44e78059e434d5"
+  "source_hash": "79b1839330a8f3ec23621a1d0fcc6ead52bc6f3b3be261a79766a7a858faee1a"
 }
