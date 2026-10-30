@@ -13,7 +13,7 @@
    pulses. trial_type `trig_pulse` (meaning not documented in the release).
 Usage: python events_dedup_trig.py <bids_root>
 """
-import csv, os, sys
+import csv, math, os, sys
 
 root = sys.argv[1]
 here = os.path.dirname(os.path.abspath(__file__))
@@ -35,7 +35,9 @@ for task, label in (("hfs", "hfs_train"), ("spes", "trig_pulse")):
     for p in csv.DictReader(open(os.path.join(here, f"nm000372_{task}_trig_pulses.tsv")), delimiter="\t"):
         s = int(p["sample"])
         assert abs(float(p["onset"]) * SF - s) < 0.05  # onset printed with 6 decimals
-        out.append({"onset": f"{float(p['onset']):.6f}", "duration": f"{float(p['duration']):.6f}", "trial_type": label,
+        nd = round(float(p["duration"]) * SF)  # duration in samples (the job printed seconds to 6 decimals)
+        fl = lambda x: f"{math.floor(x * 1e6) / 1e6:.6f}"  # truncate so onset + duration never exceeds the data
+        out.append({"onset": fl(s / SF), "duration": fl(nd / SF), "trial_type": label,
                     "value": "n/a", "sample": str(s), "targets": "n/a", "source": "TRIG"})
     out.sort(key=lambda r: (float(r["onset"]), r["source"]))
     with open(ev, "w", newline="") as f:
