@@ -63,9 +63,19 @@ abstract).
   128 SEEG channels, 16 DC inputs, TRIG, and OSAT/PR/Pleth monitor channels).
 - `sub-01/ieeg/sub-01_task-spes_run-1_ieeg.*`: recording with single-pulse stimulation (4096 Hz, 148 channels).
 - `*_events.tsv`: AnyWave markers (stimulation site, intensity and clinical response, analysis windows).
+  Since 30 Oct 2026: markers that the authors' analysis file (`.ades.mrk`) repeats from the acquisition file (`.mrk`)
+  are one row each (`source` = both), and pulses of the recorded TRIG channel are added (`source` = TRIG). In the HFS
+  run TRIG marks all 6 stimulation trains (5.05 s each, the protocol's 5-s trains), including the first train at
+  23.7 s, which has no marker in the release. In the SPES run TRIG changes level only twice (0-11.6 s and
+  311.5-320.0 s) and does not mark the 20 single pulses; those are visible only as stimulation artefacts in the
+  signals and are not annotated here.
 - `*_channels.tsv`: status=bad for the channels in the authors' AnyWave `.ades.bad` list.
 - `sub-01_space-Other_electrodes.tsv`: contact coordinates (mm) in the FreeSurfer surface RAS of the T1 image, with
   hemisphere and FreeSurfer label, from the authors' Contact_coordinates.xlsx.
+  These are FreeSurfer tkrRAS coordinates of a conformed (256^3, 1 mm) version of the MRI. The released T1 is not
+  conformed (240 x 320 x 176 voxels, 0.8 x 0.8 x 1.2 mm, LPS), and the release does not give the offset (c_ras) that
+  links tkrRAS to the T1's scanner coordinates, so the contacts cannot be overlaid on the released T1 with its affine
+  alone (see coordsystem.json). Channel C90 has no coordinate.
 - `sub-01/anat/sub-01_T1w.nii.gz`: the authors' defaced T1 (MRI_defaced.mgz), voxel data and affine unchanged.
   Deface check (surface renderings, six views): facial features are removed.
 - `sourcedata/dryad-7h44j0ztk-deidentified/`: the release folder (scripts, ROI/tract files, coordinate and SPES

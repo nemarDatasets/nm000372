@@ -1,7 +1,7 @@
 {
   "iEEGCoordinateSystem": "Other",
   "iEEGCoordinateUnits": "mm",
-  "iEEGCoordinateSystemDescription": "FreeSurfer surface RAS (tkrRAS) of the patient's T1 image MRI_defaced.mgz: columns xmri/ymri/zmri of Data/Contact_coordinates.xlsx. Verified for every contact against the voxel columns: x = 128 - xmrivox, y = zmrivox - 128, z = 128 - ymrivox (the FreeSurfer conformed-space tkr transform).",
+  "iEEGCoordinateSystemDescription": "FreeSurfer surface RAS (tkrRAS) of the patient's T1 image MRI_defaced.mgz: columns xmri/ymri/zmri of Data/Contact_coordinates.xlsx. Verified for every contact against the voxel columns: x = 128 - xmrivox, y = zmrivox - 128, z = 128 - ymrivox (the FreeSurfer conformed-space tkr transform). Caution (30 Oct 2026): the released T1 (MRI_defaced.mgz, here sub-01_T1w.nii.gz) is not in FreeSurfer conformed space: 240 x 320 x 176 voxels of 0.8 x 0.8 x 1.2 mm, LPS orientation (sform). The voxel columns and the 128-offset tkr relation above refer to a conformed 256^3, 1-mm volume that is not in the release, so these coordinates cannot be placed on the released T1 with its affine alone (FreeSurfer tkrRAS differs from scanner RAS by the volume-centre offset c_ras, which the release does not give). Channel C90 has no coordinate.",
   "iEEGCoordinateProcessingDescription": "Contact coordinates as provided by the authors (Contact_coordinates.xlsx).",
   "IntendedFor": "bids::sub-01/anat/sub-01_T1w.nii.gz"
 }
