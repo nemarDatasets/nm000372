@@ -1,2 +1,4 @@
 onset	duration	trial_type	value	sample	targets	source
+0.000000	11.569824	trig_pulse	n/a	0	n/a	TRIG
 10.000000	0.000000	SPES D08 D09	n/a	40960	n/a	acquisition_mrk
+311.532226	8.468017	trig_pulse	n/a	1276036	n/a	TRIG

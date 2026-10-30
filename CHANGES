@@ -1,3 +1,7 @@
+1.0.5 2026-10-30
+
+  - Merge duplicate markers and add trigger train events
+
 1.0.4 2026-10-16
   - dataset_description.json: replaced citation-slug Name with the descriptive title already used in README.
 
