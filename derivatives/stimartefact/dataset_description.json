@@ -1,0 +1,17 @@
+{
+  "Name": "nm000372: stimulation onsets detected from the stimulation artefact (not from a source)",
+  "BIDSVersion": "1.9.0",
+  "DatasetType": "derivative",
+  "GeneratedBy": [
+    {
+      "Name": "stimfeat.py + stimdetect.py (NEMAR curation, Oct 2026)",
+      "Description": "Artefact-based detection of stimulation pulses, trains and 100 Hz blocks; code in code/fix-20261030_stimartefact/ of the raw dataset.",
+      "CodeURL": "https://github.com/nemarDatasets/nm000372/tree/main/code/fix-20261030_stimartefact"
+    }
+  ],
+  "SourceDatasets": [
+    {
+      "DOI": "10.82901/nemar.nm000372"
+    }
+  ]
+}

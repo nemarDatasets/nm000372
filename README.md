@@ -68,7 +68,9 @@ abstract).
   run TRIG marks all 6 stimulation trains (5.05 s each, the protocol's 5-s trains), including the first train at
   23.7 s, which has no marker in the release. In the SPES run TRIG changes level only twice (0-11.6 s and
   311.5-320.0 s) and does not mark the 20 single pulses; those are visible only as stimulation artefacts in the
-  signals and are not annotated here.
+  signals and are not annotated in `events.tsv`. Artefact-derived onsets (20 SPES pulses, 6 HFS trains), clearly
+  labelled as NOT from a source, are in a separate derivative: `derivatives/stimartefact/` (method, thresholds and
+  counts in its README; code in `code/fix-20261030_stimartefact/`).
 - `*_channels.tsv`: status=bad for the channels in the authors' AnyWave `.ades.bad` list.
 - `sub-01_space-Other_electrodes.tsv`: contact coordinates (mm) in the FreeSurfer surface RAS of the T1 image, with
   hemisphere and FreeSurfer label, from the authors' Contact_coordinates.xlsx.

@@ -1,6 +1,7 @@
 1.0.5 2026-10-30
 
   - Merge duplicate markers and add trigger train events
+  - Stimulation onsets detected from the stimulation artefact, as a clearly labelled derivative (derivatives/stimartefact; NOT from a source: method, thresholds and counts in its README, code in code/fix-20261030_stimartefact). events.tsv unchanged.
 
 1.0.4 2026-10-16
   - dataset_description.json: replaced citation-slug Name with the descriptive title already used in README.
