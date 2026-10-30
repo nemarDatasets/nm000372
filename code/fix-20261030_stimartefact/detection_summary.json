@@ -1,0 +1,31 @@
+{
+ "sub-01_task-hfs_run-1": {
+  "sfreq": 4096.0,
+  "n_contacts": 65,
+  "duration_s": 660.0,
+  "n_trains": 6,
+  "train_pulses": [
+   218,
+   218,
+   218,
+   218,
+   218,
+   218
+  ],
+  "rejected_groups": 7
+ },
+ "sub-01_task-spes_run-1": {
+  "sfreq": 4096.0,
+  "n_contacts": 122,
+  "duration_s": 320.0,
+  "n_candidates": 21,
+  "n_pulses": 20,
+  "n_trains": 1,
+  "train_sizes": [
+   20
+  ],
+  "rejected_onsets_s": [
+   7.134033
+  ]
+ }
+}

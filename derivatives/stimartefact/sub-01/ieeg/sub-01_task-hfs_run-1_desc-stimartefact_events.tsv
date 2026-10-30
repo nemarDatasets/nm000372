@@ -1,0 +1,7 @@
+onset	duration	trial_type	sample	peak_score	n_pulses	method
+23.675781	5.045898	hfs_train	96976	777.3	218	pulse_train
+72.344727	5.045898	hfs_train	296324	290.0	218	pulse_train
+94.947021	5.045654	hfs_train	388903	589.8	218	pulse_train
+296.185303	5.045898	hfs_train	1213175	715.6	218	pulse_train
+469.242188	5.045898	hfs_train	1922016	721.6	218	pulse_train
+634.370850	5.045898	hfs_train	2598383	719.2	218	pulse_train

@@ -1,0 +1,32 @@
+{
+  "onset": {
+    "Description": "Detected onset (s from the first sample of the recording): the first sample after the first stimulation-artefact step of the pulse, train or block.",
+    "Units": "s"
+  },
+  "duration": {
+    "Description": "0 for single pulses; for trains and blocks the time from the first to the last detected pulse (trains: plus one pulse interval).",
+    "Units": "s"
+  },
+  "trial_type": {
+    "Description": "Kind of detected stimulation.",
+    "Levels": {
+      "spes_pulse": "single-pulse electrical stimulation (SPES) pulse, detected from the artefact"
+    }
+  },
+  "sample": {
+    "Description": "onset x sampling frequency (0-based sample index in the data file)."
+  },
+  "peak_score": {
+    "Description": "Largest detection score of the event: for pulses and trains the step score (90th percentile across contacts of |sample step| / robust SD of that contact's steps); for 100 Hz blocks the largest comb score (log10 power ratio, see README)."
+  },
+  "n_pulses": {
+    "Description": "Number of detected pulses in the event (n/a for 100 Hz blocks, where single pulses are not counted)."
+  },
+  "method": {
+    "Description": "How onset and duration were obtained.",
+    "Levels": {
+      "pulse_step": "single pulse: step score above 50"
+    }
+  },
+  "Description": "Stimulation onsets DETECTED FROM THE STIMULATION ARTEFACT in the recorded signals. Not from a source: the release does not annotate these events. Method, thresholds and counts: README of this derivative; code: code/fix-20261030_stimartefact/."
+}
