@@ -64,11 +64,13 @@ abstract).
 - `sub-01/ieeg/sub-01_task-spes_run-1_ieeg.*`: recording with single-pulse stimulation (4096 Hz, 148 channels).
 - `*_events.tsv`: AnyWave markers (stimulation site, intensity and clinical response, analysis windows).
   Since 30 Oct 2026: markers that the authors' analysis file (`.ades.mrk`) repeats from the acquisition file (`.mrk`)
-  are one row each (`source` = both), and pulses of the recorded TRIG channel are added (`source` = TRIG). In the HFS
-  run TRIG marks all 6 stimulation trains (5.05 s each, the protocol's 5-s trains), including the first train at
-  23.7 s, which has no marker in the release. In the SPES run TRIG changes level only twice (0-11.6 s and
-  311.5-320.0 s) and does not mark the 20 single pulses; those are visible only as stimulation artefacts in the
-  signals and are not annotated in `events.tsv`. Artefact-derived onsets (20 SPES pulses, 6 HFS trains), clearly
+  are one row each (`source` = both), and the stretches where the recorded TRIG channel is at its lower level, the
+  stimulator-on gate, are added (`source` = TRIG). In the HFS run these are the 6 stimulation trains (5.05 s each, the
+  protocol's 5-s trains), including the first train at 23.7 s, which has no marker in the release. In the SPES run TRIG
+  is at that level once, from 11.570 s to 311.532 s (`spes_gate`); this span holds all 20 single pulses but does not
+  mark them one by one; the pulses are visible only as stimulation artefacts in the signals and are not annotated in
+  `events.tsv`. (Corrected 2 Nov 2026: the version of 30 Oct marked the two stretches at the higher, idle level,
+  0-11.6 s and 311.5-320.0 s, as `trig_pulse`.) Artefact-derived onsets (20 SPES pulses, 6 HFS trains), clearly
   labelled as NOT from a source, are in a separate derivative: `derivatives/stimartefact/` (method, thresholds and
   counts in its README; code in `code/fix-20261030_stimartefact/`).
 - `*_channels.tsv`: status=bad for the channels in the authors' AnyWave `.ades.bad` list.
