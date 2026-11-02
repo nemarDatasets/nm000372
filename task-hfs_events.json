@@ -8,7 +8,7 @@
     "Units": "s"
   },
   "trial_type": {
-    "Description": "AnyWave marker label, verbatim (e.g. '43Hz D08-D09 0.6mA; body perception' = 43 Hz stimulation of bipolar contacts D08-D09 at 0.6 mA with the clinical response; 'SPES D08 D09'; prestim/stim/poststim = authors' analysis windows)"
+    "Description": "AnyWave marker label, verbatim (e.g. '43Hz D08-D09 0.6mA; body perception' = 43 Hz stimulation of bipolar contacts D08-D09 at 0.6 mA with the clinical response; 'SPES D08 D09'; prestim/stim/poststim = authors' analysis windows); 'hfs_train' = a 5.05-s stretch of the TRIG channel at its lower level (the stimulator-on gate), one per 43 Hz stimulation train (the protocol's 5-s trains; the first train, at 23.7 s, has no marker in the release)"
   },
   "value": {
     "Description": "AnyWave marker value field (n/a when the file stored -1)"
@@ -23,7 +23,9 @@
     "Description": "Marker file of origin",
     "Levels": {
       "acquisition_mrk": "<recording>.mrk (markers exported with the recording)",
-      "analysis_ades_mrk": "<recording>.ades.mrk (markers added by the authors for analysis windows)"
+      "analysis_ades_mrk": "<recording>.ades.mrk (markers added by the authors for analysis windows)",
+      "acquisition_mrk;analysis_ades_mrk": "marker present, identical, in both marker files (one row since 30 Oct 2026)",
+      "TRIG": "decoded from the recorded TRIG channel: the TRIG channel has two levels; its lower level (0.000219 in header units) is the stimulator-on gate: in the HFS run its six 5.05-s stretches are the six 43 Hz trains, in the SPES run its one stretch (11.570-311.532 s) spans the 20 single pulses (code/fix-20261030/events_dedup_trig.py)"
     }
   }
 }

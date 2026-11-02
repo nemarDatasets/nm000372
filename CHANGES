@@ -1,3 +1,19 @@
+1.0.5 2026-10-30
+
+  - HFS events.tsv: the 6 markers that the authors' analysis file (.ades.mrk) repeats from the acquisition file
+    (.mrk), identical in onset, duration and label, are one row each (source = both). The events.tsv files of
+    1.0.4 are kept byte for byte in sourcedata/events-v1.0.4/.
+  - Both runs, events.tsv: rows decoded from the recorded TRIG channel (source = TRIG). Its lower level is the
+    stimulator-on gate: 6 hfs_train rows of 5.05 s (one per 43 Hz train, including the first train at 23.7 s that
+    has no marker) and one spes_gate row (11.570-311.532 s, spanning the 20 single pulses). events.json files
+    describe the rows (code/fix-20261030/events_dedup_trig.py).
+  - coordsystem.json and README: caution that the coordinates are FreeSurfer tkrRAS of a conformed MRI; the
+    released T1 is not conformed and its c_ras offset is not released, so the contacts cannot be overlaid on it
+    with its affine alone.
+  - derivatives/stimartefact (6 files) and code/fix-20261030_stimartefact (6 files): stimulation onsets detected
+    from the stimulation artefact (20 SPES pulses, 6 HFS trains), clearly labelled as not from a source; method in
+    its README.
+
 1.0.4 2026-10-16
   - dataset_description.json: replaced citation-slug Name with the descriptive title already used in README.
 

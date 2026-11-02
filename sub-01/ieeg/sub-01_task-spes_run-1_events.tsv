@@ -1,2 +1,3 @@
 onset	duration	trial_type	value	sample	targets	source
 10.000000	0.000000	SPES D08 D09	n/a	40960	n/a	acquisition_mrk
+11.569824	299.962402	spes_gate	n/a	47390	n/a	TRIG
